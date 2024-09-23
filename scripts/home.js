@@ -67,7 +67,7 @@ function renderCourses(filteredCourses) {
 
     filteredCourses.forEach(course => {
         // Create course card
-        const card = document.createElement('div');
+        const card = document.createElement('div'); 
         card.classList.add('course-card');
         if (course.completed) {
             card.classList.add('completed'); // Apply 'completed' style for completed courses
@@ -94,3 +94,9 @@ function filterCourses(subject) {
         renderCourses(filteredCourses);
     }
 }
+
+const lastModifiedDate = document.lastModified;
+    
+    // Display it in the footer
+    document.getElementById('last-modified').textContent = lastModifiedDate;
+
