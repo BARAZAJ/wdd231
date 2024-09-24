@@ -1,5 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
-    --primary-color:#24516b;
+    --primary-color:#500473;
     --secondary-color: #2ecc71;
     --hover-color: #444;
     
@@ -20,17 +23,23 @@ body{
     
     
 }
+.menu{
+    display: none;
+}
 .top{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: var(--primary-color);
     color: white;
     top: 0%;
 }
 .top img{
     padding-right: 10%;
+}
+.top .hamburger{
+    display: none;
 }
 nav{
    display: flex;
@@ -97,6 +106,18 @@ main{
 
 }
 
+.card2 figure{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.card2 figure img{
+    width:150%;
+    padding-right: 60%;
+}
+
 .card2{
     background-color: white;
     border-radius: 8px;
@@ -148,7 +169,7 @@ main{
 }
 
 h1 {
-    background-color: #24516b;
+    background-color: var(--primary-color);
     color: white;
     padding: 15px;
     border-radius: 8px;
@@ -247,19 +268,94 @@ body{
 nav{
     display: none;
 }
+/*.menu {
+    list-style-type: none;
+    padding: 0;
+    
+    display: flex;
+    grid-area: top;
+    margin-top: 20%;
+  }*/
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding:10px
+  }
+  
+  .menu li a:hover {
+    color: #f0f0f0;
+  }
+  
 
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+    margin-top: 9%;
+    }
 
+.menu.show {
+    transform: translateY(0);
+    display: flex;
 
+    
+     
+    }
+.menu.show .card1{
+    padding-top: 10%;
+}
 
+.top .hamburger {
+    display: block;
+    }
 
+.hamburger.active  {
+    display: none;
+    }
 
+.close-icon.active  {
+    display: block; 
+    }
 
-
-
-
+.hamburger img:hover{
+    background-color: var(--hover-color) ;
+    padding:10px;
 
 }
- 
+.close-icon img{
+    width: 50px;
+    
+}
+.close-icon img:hover{
+    background-color: var(--hover-color);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

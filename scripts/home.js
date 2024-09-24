@@ -100,3 +100,39 @@ const lastModifiedDate = document.lastModified;
     // Display it in the footer
     document.getElementById('last-modified').textContent = lastModifiedDate;
 
+    const hamburger = document.querySelector('.hamburger'); 
+    const closeIcon = document.querySelector('.close-icon');
+    const menu = document.querySelector('.menu');
+    
+    // Show the menu and toggle between hamburger and X icons
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+      hamburger.classList.toggle('active');
+      closeIcon.classList.toggle('active');
+    });
+    
+    // Hide the menu when the X icon is clicked
+    closeIcon.addEventListener('click', () => {
+      menu.classList.remove('show');
+      hamburger.classList.remove('active');
+      closeIcon.classList.remove('active');
+    });
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
