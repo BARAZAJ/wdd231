@@ -33,7 +33,7 @@ body{
     justify-content: space-evenly;
     background-color: var(--primary-color);
     color: white;
-    top: 0%;
+   
 }
 .top img{
     padding-right: 10%;
