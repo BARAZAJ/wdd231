@@ -106,7 +106,11 @@ main{
     height: 300px;
     border: 1px solid #ddd;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
+    
+}
+.card2 figure{
+    margin-left: 40%;
 }
 
 .card1 p{
@@ -208,6 +212,41 @@ footer .p{
     color: white;
 }
 
+@media only screen and (max-width: 768px) {
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+     "top"
+     "main"
+     "cert"
+     "footer"
+}
+.top{
+    grid-area: top;
+}
+
+.section1{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+.card2{
+    margin-top: 5%;
+    width: 90%;
+}
+.card1{
+    margin-top: 5%;
+    width: 90%;
+}
+
+.certificate-section{
+    width: 90%;
+}
+nav{
+    display: none;
+}
 
 
 
@@ -216,6 +255,10 @@ footer .p{
 
 
 
+
+
+
+}
  
 
 
