@@ -114,8 +114,11 @@ justify-content: center;
 
 }
 .card2 figure img{
-    width:150%;
+    width:130%;
     padding-right: 60%;
+}
+.card2 figure figcaption{
+    padding-right: 45%;
 }
 
 .card2{
