@@ -118,6 +118,14 @@ const lastModifiedDate = document.lastModified;
       closeIcon.classList.remove('active');
     });
     
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Define the interesting symbol
+const symbol = "©";
+
+// Populate the footer with the symbol before the current year
+document.getElementById("footer-year").textContent = `${symbol} ${currentYear}`;
 
 
 
