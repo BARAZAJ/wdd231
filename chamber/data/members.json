@@ -1,0 +1,58 @@
+[
+    {"company":"John's bakery",
+    "address":"clive road west",
+    "phone-number":"+256778724681",
+    "website":"www.johnbake.com",
+    "image_url":"https://ibb.co/LzWh869",
+    "membership-level":1,
+    "employees":20 
+},
+{"company":"Bread house",
+"address":"Plot 23 oboja road",
+"phone-number":"+256779226601",
+"website":"www.breadhouse.com",
+"image_url":"https://ibb.co/LzWh869",
+"membership-level":3,
+"employees":26
+},
+{"company":"Adana Boutique",
+"address":"Plot 10 main street",
+"phone-number":"+256778790098",
+"website":"www.adanabo.com",
+"image_url":"https://ibb.co/LzWh869",
+"membership-level":2,
+"employees":16
+},
+{"company":"Super Garage",
+"address":"Plot 7 main street",
+"phone-number":"+256777531232",
+"website":"www.supgarage.com",
+"image_url":"https://ibb.co/LzWh869",
+"membership-level":1,
+"employees":10
+},
+{"company":"Jinja wholesalers",
+"address":"Plot 3 Iganga road",
+"phone-number":"+25677879332221",
+"website":"www.johnbake.com",
+"image_url":"https://ibb.co/LzWh869",
+"membership-level":2,
+"employees":23
+},
+{"company":"The deli",
+"address":"Plot 17 main street",
+"phone-number":"+256778794088",
+"website":"www.deli.com",
+"image_url":"https://ibb.co/LzWh869",
+"membership-level":3,
+"employees":16
+},
+{"company":"Bourbon",
+"address":"Plot 10 scindia road",
+"phone-number":"+256778709739",
+"website":"www.realbourbon.com",
+"image_url":"https://ibb.co/LzWh869",
+"membership-level":1,
+"employees":17
+}
+]

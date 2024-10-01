@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The directory section of official website of the Jinja chamber of commerce</title>
-    <meta name="description" content="The official website of the Jinja chamber of commerce. The directory section displays major businesses in the city.">
-    <meta name="author"  content="Baraza John">
+    <title>The directory section of the official website of the Jinja Chamber of Commerce</title>
+    <meta name="description" content="The official website of the Jinja Chamber of Commerce. The directory section displays major businesses in the city.">
+    <meta name="author" content="Baraza John">
     <meta property="og:title" content="A directory of the major businesses in Jinja">
     <meta property="og:type" content="website">
-    <meta property="og:image"  content="https://ibb.co/R2YLBH6">
-    <meta property="og:url"    content="https://www.jinjacoc.org">
-
+    <meta property="og:image" content="https://ibb.co/R2YLBH6">
+    <meta property="og:url" content="https://www.jinjacoc.org">
 
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles/directory.css">
-    <script ></script>
-
+    <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header1">
-            <img src="images/e-svgrepo-com.svg" alt="my log" width="50px">
+            <img src="images/e-svgrepo-com.svg" alt="my logo" width="50px">
             <div>
                 <h2>JINJA</h2>
-                <P>Chamber of Commerce</P>
+                <p>Chamber of Commerce</p>
             </div>
         </div>
         <nav>
@@ -36,37 +34,36 @@
                 <img src="images/activity-svgrepo-com.svg" alt="logo" width="50px">
             </ul>
         </nav>
-
     </header>
     <main>
         <p>Hey there</p>
-
+        <button id="toggle-grid">Grid View</button>
+        <button id="toggle-list">List View</button>
+        
+        <div id="members-container" class="grid-view"></div>
     </main>
 
     <footer>
         <div>
-            <h3> Jinja Chamber of Commerce</h3>
+            <h3>Jinja Chamber of Commerce</h3>
             <p>Clive Road west</p>
             <p>P.O box 2016</p>
-            <p>infor@jinjacc.org</p>
-            <p> (233)555-2300</p>
+            <p>info@jinjacc.org</p>
+            <p>(233) 555-2300</p>
         </div>
         <div>
             <ul>
                 <li><a href="#"><img src="images/icons8-youtube.svg"></a></li>
-                <li><a href="#"><img src="images/icons8-linkedin.svg" ></a></li>
-                <li><a href="#"><img src="images/icons8-facebook.svg"></a> </li>
+                <li><a href="#"><img src="images/icons8-linkedin.svg"></a></li>
+                <li><a href="#"><img src="images/icons8-facebook.svg"></a></li>
             </ul>
-
         </div>
         <div>
-            <P>WDD231 Class project</P>
+            <p>WDD231 Class project</p>
             <p>Baraza John</p>
-            <p>&copy;2024 Jinja Chamber of Commerce</p>
-
+            <p>&copy; <span id="year"></span></p>
+            <p>Last modified: <span id="last-modified"></span></p>
         </div>
-
     </footer>
-    
 </body>
 </html>
