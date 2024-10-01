@@ -16,6 +16,14 @@ header{
     align-items: center;
     justify-content: space-around;
 }
+.header1 div h2{
+    margin-bottom: 2%;
+}
+.header1 div p{
+    margin-top: 0%;
+}
+
+
 .header2{
     display: flex;
     flex-direction: row;
@@ -35,6 +43,7 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     background-color: blueviolet;
+    bottom: 0%;
 }
 
 footer div:nth-child(2) ul{
@@ -43,6 +52,7 @@ footer div:nth-child(2) ul{
  background-color: blueviolet;
  align-items: center;
  justify-content: space-evenly;
+ list-style-type: none;
 }
 
 
