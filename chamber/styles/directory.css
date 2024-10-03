@@ -92,7 +92,7 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--secondary-color);
-    bottom: 0;
+    
     margin-top: 10%;
 }
 
@@ -112,7 +112,16 @@ footer div:nth-child(2) ul {
 }
 
 .list-view {
-    display: block;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+.list-view .member-card{
+    flex-direction: row;
+}
+.list-view .member-card img{
+    width:20%;
+    height: 10%;
 }
 
 .member-card {
@@ -120,11 +129,16 @@ footer div:nth-child(2) ul {
     padding: 1rem;
     border-radius: 8px;
     background-color: #f9f9f9;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
+
 .member-card img {
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 30%;
     border-radius: 8px;
 }
 
@@ -163,8 +177,8 @@ main{
         margin-right: 15%;
         
     }
-    .buttons1{
-        display: none;}
+    /*.buttons1{
+        display: none;}*/
     
       
       .menu li {
@@ -183,11 +197,11 @@ main{
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 40px;
-        right: 0;
+        top: 40%;
+        left:60%;
         width: 50%;
         background-color: var(--primary-color);
-        padding: 20px;
+        
         box-sizing: border-box;
         z-index: 1;
         transition: transform 0.3s ease-in-out;
@@ -257,7 +271,8 @@ main{
         margin: 0%;
     }
     footer div h3{
-        margin:0%
+        margin:0%;
+        padding-top: 10%;
     }
     
 

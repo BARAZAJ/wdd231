@@ -31,13 +31,18 @@ function displayMembers(members) {
         const card = document.createElement('div');
         card.classList.add('member-card');
         card.innerHTML = `
-            <img src="${member.image_url}" alt="${member.company} logo">
+        
+        <div>
             <h2>${member.company}</h2>
             <p>Address: ${member.address}</p>
             <p>Phone: ${member['phone-number']}</p>
             <p>Website: <a href="https://${member.website}" target="_blank">${member.website}</a></p>
             <p>Employees: ${member.employees}</p>
             <p>Membership Level: ${member['membership-level']}</p>
+            </div>
+            
+            <img src="${member.image_url}" alt="${member.company} logo">
+        
         `;
         container.appendChild(card);
     });

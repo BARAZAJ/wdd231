@@ -3,7 +3,7 @@
     "address":"clive road west",
     "phone-number":"+256778724681",
     "website":"www.johnbake.com",
-    "image_url":"https://via.placeholder.com/150",
+    "image_url":"images/hotel.jpg",
     "membership-level":1,
     "employees":20 
 },
@@ -11,7 +11,7 @@
 "address":"Plot 23 oboja road",
 "phone-number":"+256779226601",
 "website":"www.breadhouse.com",
-"image_url":"https://via.placeholder.com/150",
+"image_url":"images/business.png",
 "membership-level":3,
 "employees":26
 },
@@ -19,7 +19,7 @@
 "address":"Plot 10 main street",
 "phone-number":"+256778790098",
 "website":"www.adanabo.com",
-"image_url":"https://via.placeholder.com/70",
+"image_url":"images/business2.jpg",
 "membership-level":2,
 "employees":16
 },
@@ -27,7 +27,7 @@
 "address":"Plot 7 main street",
 "phone-number":"+256777531232",
 "website":"www.supgarage.com",
-"image_url":"https://via.placeholder.com/70",
+"image_url":"images/business3.jpg",
 "membership-level":1,
 "employees":10
 },
@@ -35,7 +35,7 @@
 "address":"Plot 3 Iganga road",
 "phone-number":"+25677879332221",
 "website":"www.johnbake.com",
-"image_url":"https://via.placeholder.com/70",
+"image_url":"images/business4.jpg",
 "membership-level":2,
 "employees":23
 },
@@ -43,7 +43,7 @@
 "address":"Plot 17 main street",
 "phone-number":"+256778794088",
 "website":"www.deli.com",
-"image_url":"https://via.placeholder.com/150",
+"image_url":"images/business5.jpg",
 "membership-level":3,
 "employees":16
 },
@@ -51,7 +51,7 @@
 "address":"Plot 10 scindia road",
 "phone-number":"+256778709739",
 "website":"www.realbourbon.com",
-"image_url":"https://via.placeholder.com/150",
+"image_url":"images/business6.jpg",
 "membership-level":1,
 "employees":17
 }
