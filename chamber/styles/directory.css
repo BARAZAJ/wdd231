@@ -53,6 +53,7 @@ header img{
 nav{
     
     margin-right: 10%;
+   
 }
 nav ul li {
     list-style-type: none;
@@ -64,7 +65,8 @@ nav ul li:hover{
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
+    
 }
 .header2{
     display:flex;
@@ -72,6 +74,8 @@ nav ul li a {
     align-items: center;
     justify-content: space-between;
     margin-right: 10%;
+    
+    
 }
 .header2 img{
     padding-left: 10%;
@@ -172,6 +176,7 @@ main{
 @media only screen and (max-width:765px){
     .header2 nav{
         display:none;
+        
     }
     .header1{
         margin-right: 15%;
