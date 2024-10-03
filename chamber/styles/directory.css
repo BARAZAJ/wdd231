@@ -1,7 +1,7 @@
 :root {
-    --primary-color:rgb(2, 157, 134);
+    --primary-color:rgb(94, 239, 217);
     --secondary-color: rgb(94, 239, 217);
-    --hover-color: #444;
+    --hover-color: #897e7e;
     
     --primary-text: 'Arial', sans-serif;
     --heading-font: 'Georgia', serif;
@@ -65,7 +65,7 @@ nav ul li:hover{
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(53, 53, 50);
     
 }
 .header2{
@@ -74,7 +74,7 @@ nav ul li a {
     align-items: center;
     justify-content: space-between;
     margin-right: 10%;
-    
+
     
 }
 .header2 img{
