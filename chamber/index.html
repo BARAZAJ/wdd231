@@ -13,7 +13,7 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles/directory.css">
-    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -51,18 +51,43 @@
         </div>
     </header>
     <main>
-        <img src="images/jinja1.jpeg" alt="Jinja Town image" class="hero">
+        <div class="hero">
+        <img src="images/jinja1.jpeg" alt="Jinja Town image" >
+        <a href="#"> <p>Join the Jinja Chamber of commerce Today!</p></a>
+        </div>
         <h1>Home</h1>
-        <section>
-            <div>
+        <section class="section1">
+            <div class="card">
                 <h2>Events</h2>
+                <p></p>
 
             </div>
-            <div>
+            <div class="card">
                 <h2>Current weather</h2>
+                <div>
+                <figure id="caption-desc">
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <div>
+                <p>current temp:<span id="current-temp"></span></p>
+                <p>High:<span id="max"></span></p>
+                <p>Low: <span id="min"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Sunrise: <span id="rise"></span></p>
+                <p>Sunset: <span id="set"></span> </p>
+                </div>
+                </div>
+
+                
             </div>
-            <div>
+            <div class="card">
                 <h2> Weather forecast</h2>
+                <div>
+                    <p>Today:<span id="today"></span></p>
+                    <p> Tuesday:<span id="tuesday"></span></p>
+                    <p>Wednesday:<span id="wednesday"></span></p>
+                </div>
             </div>
         </section>
        <section>
