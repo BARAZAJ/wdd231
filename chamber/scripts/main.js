@@ -44,7 +44,7 @@ const wednesday = document.querySelector('#wednesday');
 
 
 // Replace the API key and make sure lat/lon are correct for Jinja
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=0.44186&lon=33.18033&appid=0d30100fd45e2d175df6babe27c43b43&units=metric';
+const url = 'https://pro.openweathermap.org/data/2.5/forecast/hourly?lat={lat}&lon={lon}&appid={API key}';
 
 async function apifetch() {
     try {
