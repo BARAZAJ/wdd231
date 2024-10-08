@@ -249,6 +249,35 @@ main{
      background-color: var(--hover-color);
      color:white;
 }
+.spotlight-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.spotlight-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spotlight-card img {
+    width: 20%;
+    height: auto;
+}
+.spotlight-card div{
+    justify-content: flex-start;
+}
 
 @media only screen and (max-width:765px){
     .header2 nav{

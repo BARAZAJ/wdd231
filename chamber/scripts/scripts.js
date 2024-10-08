@@ -44,7 +44,7 @@ const wednesday = document.querySelector('#wednesday');
 
 
 // Replace the API key and make sure lat/lon are correct for Jinja
-const url = 'https://pro.openweathermap.org/data/2.5/forecast/hourly?lat={lat}&lon={lon}&appid={API key}';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=0.44186&lon=33.18033&appid=0d30100fd45e2d175df6babe27c43b43&units=metric';
 
 async function apifetch() {
     try {
@@ -85,3 +85,44 @@ async function apifetch() {
 }
 
 apifetch();
+
+// Fetch members and display spotlight
+async function fetchMembers() {
+    try {
+        const response = await fetch('data/members.json'); // Adjust file path as necessary
+        const members = await response.json();
+        const goldSilverMembers = members.filter(member => member['membership_level'] === 'Gold' || member['membership_level'] === 'Silver');
+        const spotlightMembers = getRandomMembers(goldSilverMembers, 3);
+        displaySpotlightMembers(spotlightMembers);
+    } catch (error) {
+        console.error('Error fetching member data:', error);
+    }
+}
+
+function getRandomMembers(members, count) {
+    const shuffled = members.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+function displaySpotlightMembers(members) {
+    const spotlightContainer = document.getElementById('spotlight-container');
+    members.forEach(member => {
+        const card = document.createElement('div');
+        card.classList.add('spotlight-card');
+        card.innerHTML = `
+            
+            <img src="${member.image_url}" alt="${member.company} Logo">
+            <div>
+            <h3>${member.company}</h3>
+            <p>Address:${member.address}</p>
+            <p>TEL: ${member.phone}</p>
+            <p>Memebership: ${member.membership_level}</p>
+            <p>URL: <a href="${member.website}">${member.website}</a></p>
+            </div>
+        `;
+        spotlightContainer.appendChild(card);
+    });
+}
+
+fetchMembers();
+
