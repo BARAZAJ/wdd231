@@ -229,7 +229,7 @@ main{
     grid-area: hero;
     text-decoration: none;
     position: relative;
-    top: 50px;
+    top: 10px;
     left:20px;    
 }
 .hero a p{
