@@ -116,7 +116,7 @@ function displaySpotlightMembers(members) {
             <h3>${member.company}</h3>
             <p>Address:${member.address}</p>
             <p>TEL: ${member.phone}</p>
-            <p>Memebership: ${member.membership_level}</p>
+            <p>Membership: ${member.membership_level}</p>
             <p>URL: <a href="${member.website}">${member.website}</a></p>
             </div>
         `;
