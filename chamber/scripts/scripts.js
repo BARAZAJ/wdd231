@@ -97,9 +97,12 @@ async function apifetch() {
             const data = await response.json();
             console.log(data);  // Check the fetched data structure in the console
 
+            const icon = data.list[0].weather[0].icon;  // Extract the icon code
+            const description = data.list[0].weather[0].description;  // Extract the weather description
+
             const temp = data.list[0].main.temp;
-            const icon = data.list[0].weather[0].icon;
-            const description = data.list[0].weather[0].description;
+           // const icon = data.list[0].weather[0].icon;
+          //  const description = data.list[0].weather[0].description;
             const max = data.list[0].main.temp_max;
             const min = data.list[0].main.temp_min;
             const humidity = data.list[0].main.humidity;
@@ -112,7 +115,7 @@ async function apifetch() {
 
             // Update the DOM elements with the fetched data
             currentTemp.textContent = `${temp.toFixed(1)}°C`;  // Display temperature
-            weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;  // Weather icon URL
+           // weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;  // Weather icon URL
             captionDesc.textContent = description;  // Weather description
             highTemp.textContent=`${max.toFixed(1)}°C`;
             lowTemp.textContent=`${min.toFixed(1)}°C`;
@@ -122,6 +125,8 @@ async function apifetch() {
             todayTemp.textContent=`${todaytemp.toFixed(1)}°C`;
             tuesdayTemp.textContent=`${tuesdaytemp.toFixed(1)}°C`;
             wednesdayTemp.textContent=`${wednesdaytemp.toFixed(1)}°C`;
+
+            
           
 
 
