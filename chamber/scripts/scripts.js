@@ -29,62 +29,7 @@ closeIcon.addEventListener('click', () => {
     closeIcon.classList.remove('active');
 });
 
-// Fetch weather data and update the DOM
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('#caption-desc');
-const highTemp = document.querySelector('#max');
-const lowTemp = document.querySelector('#min');
-const humidity =document.querySelector('#humidity');
-const sunRise = document.querySelector('#rise')
-const sunSet = document.querySelector('#set')
-const today= document.querySelector('#today');
-const tuesday =document.querySelector('#tuesday');
-const wednesday = document.querySelector('#wednesday');
 
-
-// Replace the API key and make sure lat/lon are correct for Jinja
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=0.44186&lon=33.18033&appid=0d30100fd45e2d175df6babe27c43b43&units=metric';
-
-async function apifetch() {
-    try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            console.log(data);  // Check the fetched data structure in the console
-
-            // Extract the needed information from the data
-            const temp = data.main.temp;
-            const icon = data.weather[0].icon;
-            const description = data.weather[0].description;
-            const max = data.main.temp_max;
-            const low = data.main.temp_min;
-            const hum= data.main.humidity;
-            const rise = data.sys.sunrise;
-            const set = data.sys.sunset;
-            const todayTemp=data.
-
-            // Update the DOM elements with the fetched data
-            currentTemp.textContent = `${temp.toFixed(1)}°C`;  // Display temperature
-            weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;  // Weather icon URL
-            captionDesc.textContent = description;  // Weather description
-            highTemp.textContent=max;
-            lowTemp.textContent=low;
-            sunSet.textContent=set;
-            sunRise.textContent=rise;
-            humidity.textContent=hum;
-            
-
-
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log("Error fetching weather data:", error);
-    }
-}
-
-apifetch();
 
 // Fetch members and display spotlight
 async function fetchMembers() {
@@ -126,3 +71,66 @@ function displaySpotlightMembers(members) {
 
 fetchMembers();
 
+// Fetch weather data and update the DOM
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('#caption-desc');
+const highTemp = document.querySelector('#max');
+const lowTemp = document.querySelector('#min');
+const Humidity =document.querySelector('#humidity');
+const sunRise = document.querySelector('#rise')
+const sunSet = document.querySelector('#set')
+const today= document.querySelector('#today');
+const tuesday =document.querySelector('#tuesday');
+const wednesday = document.querySelector('#wednesday');
+const todayTemp = document.querySelector('#today')
+const tuesdayTemp = document.querySelector('#tuesday')
+const wednesdayTemp = document.querySelector('#wednesday')
+
+
+// Replace the API key and make sure lat/lon are correct for Jinja
+const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=0.44186&lon=33.18033&appid=0d30100fd45e2d175df6babe27c43b43&units=metric'
+async function apifetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);  // Check the fetched data structure in the console
+
+            const temp = data.list[0].main.temp;
+            const icon = data.list[0].weather[0].icon;
+            const description = data.list[0].weather[0].description;
+            const max = data.list[0].main.temp_max;
+            const min = data.list[0].main.temp_min;
+            const humidity = data.list[0].main.humidity;
+            const sunrise = new Date(data.city.sunrise * 1000); // Convert Unix timestamp to JS Date object
+            const sunset = new Date(data.city.sunset * 1000);   // Convert Unix timestamp to JS Date object
+            const todaytemp = data.list[0].main.temp;
+            const tuesdaytemp = data.list[1].main.temp;
+            const wednesdaytemp = data.list[2].main.temp;
+            
+
+            // Update the DOM elements with the fetched data
+            currentTemp.textContent = `${temp.toFixed(1)}°C`;  // Display temperature
+            weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;  // Weather icon URL
+            captionDesc.textContent = description;  // Weather description
+            highTemp.textContent=`${max.toFixed(1)}°C`;
+            lowTemp.textContent=`${min.toFixed(1)}°C`;
+            sunSet.textContent=sunset;
+            sunRise.textContent=sunrise;
+            Humidity.textContent=humidity;
+            todayTemp.textContent=`${todaytemp.toFixed(1)}°C`;
+            tuesdayTemp.textContent=`${tuesdaytemp.toFixed(1)}°C`;
+            wednesdayTemp.textContent=`${wednesdaytemp.toFixed(1)}°C`;
+          
+
+
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log("Error fetching weather data:", error);
+    }
+}
+
+apifetch();
