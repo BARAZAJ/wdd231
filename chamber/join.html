@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The directory section of the official website of the Jinja Chamber of Commerce</title>
+    <meta name="description" content="The official website of the Jinja Chamber of Commerce. The directory section displays major businesses in the city.">
+    <meta name="author" content="Baraza John">
+    <meta property="og:title" content="A directory of the major businesses in Jinja">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://barazaj.github.io/wdd231/chamber/images/business.png">
+    <meta property="og:url" content="https://barazaj.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/scripts.js" defer></script>
+</head> 
+<body>
+    <header>
+        <div class="header1">
+            <img src="images/e-svgrepo-com.svg" alt="my logo">
+            <div>
+                <h2>JINJA</h2>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <div class="header2">
+        <nav>
+            <ul class="header1">
+                <li><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="directory.html"><strong>Directory</strong></a></li>
+                <li><a href="#"><strong>Join</strong></a></li>
+                <li><a href="#"><strong>Discover</strong></a></li>
+                
+        </ul>   
+        </nav>
+        <img src="images/activity-svgrepo-com.svg" alt="logo">
+        </div>
+        <nav class="menu"> 
+            <ul >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+            <div class="close-icon"  ><img src="images/icons8-x-48.png" alt="icon image"> 
+            </div> <!-- X icon for closing the menu -->
+        </nav>
+        <div class="hamburger">
+            <img src="images/icons8-hamburger-menu.svg" alt="hamburger menu"  >
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+        <img src="images/jinja1.jpeg" alt="Jinja Town image" >
+        <a href="#"> <p>Join the Jinja Chamber of commerce Today!</p></a>
+        </div>
+        <h1>Home</h1>
+        <section class="section1">
+            <div class="card">
+                <h2>Events</h2>
+                <p></p>
+
+            </div>
+            <div class="card">
+                <h2>Current weather</h2>
+                <div>
+                    <figure id="caption-desc">
+                        <figcaption></figcaption>
+                    </figure>
+                <div class="cardp">
+                <p><strong>current temp:</strong><span id="current-temp"></span></p>
+                <p><strong>High:</strong><span id="max"></span></p>
+                <p><strong>Low:</strong> <span id="min"></span></p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+                <p> <strong>Sunrise:</strong><span id="rise"></span></p>
+                <p> <strong>Sunset:</strong> <span id="set"></span> </p>
+                </div> 
+                </div>
+
+                
+            </div>
+            <div class="card">
+                <h2> Weather forecast</h2>
+                <div>
+                    <p>Today:<span id="today"></span></p>
+                    <p> Tuesday:<span id="tuesday"></span></p>
+                    <p>Wednesday:<span id="wednesday"></span></p>
+                    
+                </div>
+            </div>
+        </section>
+       <section>
+        <div id="spotlight-container" class="spotlight-section">
+            <!-- Spotlight members will be dynamically added here -->
+        </div>
+    </section> 
+        
+    </main>
+
+    <footer>
+        <div>
+            <h3>Jinja Chamber of Commerce</h3>
+            <p>Clive Road west</p>
+            <p>P.O box 2016</p>
+            <p>info@jinjacc.org</p>
+            <p>(233) 555-2300</p>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#"><img src="images/icons8-youtube.svg" alt="youtube icon"></a></li>
+                <li><a href="#"><img src="images/icons8-linkedin.svg" alt="linkedin icon"></a></li>
+                <li><a href="#"><img src="images/icons8-facebook.svg" alt="facebook icon"></a></li>
+            </ul>
+        </div>
+        <div>
+            <p>WDD231 Class project</p>
+            <p>Baraza John</p>
+            <p>&copy; <span id="year"></span></p>
+            <p>Last modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
