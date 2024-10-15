@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://barazaj.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/join.css">
     <script src="scripts/scripts.js" defer></script>
 </head> 
 <body>
@@ -51,74 +51,112 @@
         </div>
     </header>
     <main>
-        <div class="hero">
-        <img src="images/jinja1.jpeg" alt="Jinja Town image" >
-        <a href="#"> <p>Join the Jinja Chamber of commerce Today!</p></a>
-        </div>
-        <h1>Home</h1>
-        <section class="section1">
-            <div class="card">
-                <h2>Events</h2>
-                <p></p>
+        <h1>Join Our Chamber</h1>
+        <section>
+                <!-- Membership Form -->
+                <form action="thankyou.html" method="get">
+                    <h2>Membersip application form</h2>
+                    <!-- First Name -->
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name" required>
 
-            </div>
-            <div class="card">
-                <h2>Current weather</h2>
+                    <!-- Last Name -->
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+
+                    <!-- Organizational Title -->
+                    <label for="org-title">Organizational Title:</label>
+                    <input type="text" id="org-title" name="org-title" title="Enter your organization title" autocomplete="organization-title" pattern="[a-zA-Z\s-]{7,}" required>
+
+                    <!-- Email Address -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@domain.com" required>
+
+                    <!-- Mobile Number -->
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" title="Enter your mobile number" autocomplete="tel" required>
+
+                    <!-- Organization Name -->
+                    <label for="org-name">Business/Organization Name:</label>
+                    <input type="text" id="org-name" name="org-name" title="Enter your organization name" autocomplete="organization" required>
+
+                    <!-- Membership Level -->
+                    <label for="membership-level">Membership Level:</label>
+                    <select id="membership-level" name="membership-level" title="Select membership level" required>
+                        <option value="NP Membership">NP Membership (Non-Profit)</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+
+                    <!-- Organization Description -->
+                    <label for="description">Organization Description:</label>
+                    <textarea id="description" name="description" title="Describe your organization"></textarea>
+
+                    <!-- Hidden Timestamp Field -->
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                    <!-- Submit Button -->
+                    <button type="submit">Submit Application</button>
+                </form>
                 <div>
-                    <figure id="caption-desc">
-                        <figcaption></figcaption>
-                    </figure>
-                <div class="cardp">
-                <p><strong>current temp:</strong><span id="current-temp"></span></p>
-                <p><strong>High:</strong><span id="max"></span></p>
-                <p><strong>Low:</strong> <span id="min"></span></p>
-                <p><strong>Humidity:</strong> <span id="humidity"></span></p>
-                <p> <strong>Sunrise:</strong><span id="rise"></span></p>
-                <p> <strong>Sunset:</strong> <span id="set"></span> </p>
-                </div> 
+                <!-- Membership Cards (Small Screen Example) -->
+                <div class="membership-cards">
+                    <h2> Membership Levels</h2>
+                    <div class="card" id="np-membership">
+                        <h3>NP Membership</h2>
+                        <button id="npbutton">more info:</button>
+                    </div>
+                    <div class="card" id="bronze-membership">
+                        <h3>Bronze Membership</h2>
+                        <button id="bronzebutton">more info:</button>
+                    </div>
+                    <div class="card" id="silver-membership">
+                        <h3>Silver Membership</h2>
+                        <button id="silverbutton">more info:</button>
+                    </div>
+                    <div class="card" id="gold-membership">
+                        <h3>Gold Membership</h2>
+                        <button id="goldbutton">more info:</button>
+                    </div>
+                    <dialog id="dialogbox">
+                        <div></div>
+                        <button id="closebutton">Close</button>
+
+                    </dialog>
                 </div>
 
+                <!-- Modals for Membership Info -->
+              
+                </div>
                 
-            </div>
-            <div class="card">
-                <h2> Weather forecast</h2>
-                <div>
-                    <p>Today:<span id="today"></span></p>
-                    <p> Tuesday:<span id="tuesday"></span></p>
-                    <p>Wednesday:<span id="wednesday"></span></p>
-                    
-                </div>
-            </div>
+                <!-- Add similar modal structure for Bronze, Silver, and Gold memberships -->
         </section>
-       <section>
-        <div id="spotlight-container" class="spotlight-section">
-            <!-- Spotlight members will be dynamically added here -->
-        </div>
-    </section> 
-        
-    </main>
+                
+            </main>
 
-    <footer>
-        <div>
-            <h3>Jinja Chamber of Commerce</h3>
-            <p>Clive Road west</p>
-            <p>P.O box 2016</p>
-            <p>info@jinjacc.org</p>
-            <p>(233) 555-2300</p>
-        </div>
-        <div>
-            <ul>
-                <li><a href="#"><img src="images/icons8-youtube.svg" alt="youtube icon"></a></li>
-                <li><a href="#"><img src="images/icons8-linkedin.svg" alt="linkedin icon"></a></li>
-                <li><a href="#"><img src="images/icons8-facebook.svg" alt="facebook icon"></a></li>
-            </ul>
-        </div>
-        <div>
-            <p>WDD231 Class project</p>
-            <p>Baraza John</p>
-            <p>&copy; <span id="year"></span></p>
-            <p>Last modified: <span id="last-modified"></span></p>
-        </div>
+            <footer>
+                <div>
+                    <h3>Jinja Chamber of Commerce</h3>
+                    <p>Clive Road west</p>
+                    <p>P.O box 2016</p>
+                    <p>info@jinjacc.org</p>
+                    <p>(233) 555-2300</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#"><img src="images/icons8-youtube.svg" alt="youtube icon"></a></li>
+                        <li><a href="#"><img src="images/icons8-linkedin.svg" alt="linkedin icon"></a></li>
+                        <li><a href="#"><img src="images/icons8-facebook.svg" alt="facebook icon"></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>WDD231 Class project</p>
+                    <p>Baraza John</p>
+                    <p>&copy; <span id="year"></span></p>
+                    <p>Last modified: <span id="last-modified"></span></p>
+                </div>
+            
     </footer>
 </body>
 </html>
