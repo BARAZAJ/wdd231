@@ -32,13 +32,15 @@ const appdetails = document.querySelector('#detail');
 // Set the inner HTML of the details element
 appdetails.innerHTML = `
     <h3>We have received your application. Thank you!</h3>
-    <p>First name: ${show("first-name")}</p>
-    <p>Last name: ${show("last-name")}</p>
-    <p>Organizational title: ${show("org-title")}</p>
-    <p>Email: ${show("email")}</p>
-    <p>Tel: ${show("mobile")}</p>
-    <p>Business name: ${show("org-name")}</p>
-    <p>Membership level: ${show("membership-level")}</p>
+    <div class="detailsect>
+    <p><strong>First name            :</strong> ${show("first-name")}</p>
+    <p><strong>Last name             :</strong> ${show("last-name")}</p>
+    <p><strong>Organizational title  :</strong> ${show("org-title")}</p>
+    <p><strong>Email                 :</strong> ${show("email")}</p>
+    <p><strong>Tel                   :</strong> ${show("mobile")}</p>
+    <p><strong>Business name         :</strong> ${show("org-name")}</p>
+    <p><strong>Membership level      :</strong> ${show("membership-level")}</p>
+    </div>
 `;
 
 

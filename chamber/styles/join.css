@@ -126,11 +126,20 @@ form{
     align-items: left;
     justify-content: space-evenly;
     width: 30%;
+    background-color:rgba(94, 239, 217, 0.324) ;
+    padding: 5%;
    ;
     
 }
 form label{
     padding-top: 10%;
+   
+}
+
+
+form input{
+    width:100%;
+    height: 30px;
 }
 .membership-cards{
     display: flex;
@@ -164,7 +173,10 @@ form label{
     transform: translateX(0);
     opacity: 1;  /* Fully visible */
 }
-
+form button{
+    margin-top: 12%;
+    padding: 5%;
+}
 
  
 
