@@ -147,6 +147,8 @@ form label{
     width: 70%;
     padding: 5%;
     margin-bottom: 10%;
+    border-radius: 15px;  /* Adjust the value for how curved you want the corners */
+    padding: 20px;
   
 }
 .membership-cards .card {
@@ -277,6 +279,14 @@ form label{
     
     body{
         width: 100%;
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        justify-content: center;
     }
 
 
