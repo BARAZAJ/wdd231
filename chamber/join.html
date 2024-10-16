@@ -54,7 +54,7 @@
         <h1>Join Our Chamber</h1>
         <section>
                 <!-- Membership Form -->
-                <form action="thankyou.html" method="get">
+                <form action="thankyou.html" method="get" novalidate>
                     <h2>Membersip application form</h2>
                     <!-- First Name -->
                     <label for="first-name">First Name:</label>
@@ -66,7 +66,7 @@
 
                     <!-- Organizational Title -->
                     <label for="org-title">Organizational Title:</label>
-                    <input type="text" id="org-title" name="org-title" title="Enter your organization title" autocomplete="organization-title" pattern="[a-zA-Z\s-]{7,}" required>
+                    <input type="text" id="org-title" name="org-title" title="Please enter at least seven characters, using only letters, spaces, and hyphens." autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$" required>
 
                     <!-- Email Address -->
                     <label for="email">Email:</label>
