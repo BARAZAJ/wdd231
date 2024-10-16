@@ -38,13 +38,9 @@ appdetails.innerHTML = `
     <p><strong>Tel                   :</strong> ${show("mobile")}</p>
     <p><strong>Business name         :</strong> ${show("org-name")}</p>
     <p><strong>Membership level      :</strong> ${show("membership-level")}</p> 
-`;
+    <p>  </p>
+    <p>  </p>
+    <p>Received on ${show("timestamp")}</p>
+`;  
 
 
-
-
-
-
-   
-
-// Populate thank you page with form data from URL
