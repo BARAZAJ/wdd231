@@ -111,8 +111,10 @@ main{
     display: flex;
     flex-direction: column;
     padding-top: 10%;
-    align-items: center;
-    justify-content: center;
+    
+}
+h1{
+    padding-left: 40%;
 }
 section{
     display: flex;
@@ -265,6 +267,9 @@ form button{
         }
     .hamburger.active main{
         padding-top: 30%;
+    }
+    h1{
+        padding-left: 22%;
     }
     
     .close-icon.active  {
