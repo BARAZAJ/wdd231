@@ -111,6 +111,8 @@ main{
     display: flex;
     flex-direction: column;
     padding-top: 10%;
+    align-items: center;
+    justify-content: center;
 }
 section{
     display: flex;
