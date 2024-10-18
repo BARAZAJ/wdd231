@@ -115,7 +115,6 @@ main{
 section{
     display: flex;
     flex-direction: row;
-    align-items: top;
     justify-content: space-evenly;
     
    
@@ -123,7 +122,6 @@ section{
 form{
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: space-evenly;
     width: 30%;
     background-color:rgba(94, 239, 217, 0.324) ;
