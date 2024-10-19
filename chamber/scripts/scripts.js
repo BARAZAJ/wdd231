@@ -10,16 +10,16 @@ function getCurrentTimestamp() {
                           String(now.getSeconds()).padStart(2, '0');
     return formattedDate;
 }
-//document.getElementById('timestamp').value = getCurrentTimestamp();
+document.getElementById('timestamp').value = getCurrentTimestamp();
 
-//const titleInput= document.getElementById('org-title');
-//titleInput.addEventListener('input',()=>{
- //   if(titleInput.value.match(/^[A-Za-z\s-]{7,}$/)){
- //       console.log('valid title');
- //   } else{
-   //     console.log('Follow the format');
-   // }
-//});
+const titleInput= document.getElementById('org-title');
+titleInput.addEventListener('input',()=>{
+    if(titleInput.value.match(/^[A-Za-z\s-]{7,}$/)){
+        console.log('valid title');
+    } else{
+        console.log('Follow the format');
+    }
+});
 
 
 // Function to display the current year and last modified date
