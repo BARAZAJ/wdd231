@@ -327,9 +327,7 @@ main{
     
 }
 
-.content div{
-    padding-bottom: 50px;
-}
+
 .sidebar {
     width: 300px;
     padding: 20px;
@@ -337,6 +335,7 @@ main{
     border: 1px solid #ddd;
     margin: 20px;
     font-family: Arial, sans-serif;
+    margin-bottom: 90px ;
 }
 .data{
     border-radius: 2%;
@@ -347,6 +346,9 @@ main{
     align-items: center;
     justify-content: center;
     margin: 2%;
+    padding-bottom: 10%;
+    margin-bottom: 90px;
+    
 }
 
 .calendar {
@@ -356,6 +358,10 @@ main{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    margin-bottom: 200px;
+}
+.data p{
+    padding: 5%;
 }
 
 .month {
@@ -364,13 +370,22 @@ main{
     align-items: center;
     margin: 0;
 }
+.month h3{
+    color: white;
+}
 
 .days-of-week {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    background-color: #f0f0f0;
-    padding: 0;
+    /*display: grid;
+    grid-template-columns: repeat(7, 1fr);*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    padding: 10px;
     font-weight: bold;
+    width: 120%;
+
 }
 
 .days {
