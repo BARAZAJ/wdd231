@@ -315,6 +315,10 @@ main{
     width: 500px;
 }
 
+.pics figure img:hover{
+    width: 550px;
+}
+
 .content{
     grid-column: 1 / 2 ;
     display: flex;
@@ -552,6 +556,9 @@ button {
         grid-column: 1 / 2; 
     }
     .pics figure img{
+        width: 300px;
+    }
+    .pics figure img:hover{
         width: 300px;
     }
 
