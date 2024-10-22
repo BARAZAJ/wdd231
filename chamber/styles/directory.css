@@ -95,6 +95,7 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--secondary-color);
+    z-index: 1000;
     
     margin-top: 10%;
 }
@@ -283,6 +284,118 @@ main{
     justify-content: left;
     text-align: left;
 }
+/*.pics img{
+    width: 400px;
+    padding: 10px;
+}*/
+.discover{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.pics{
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.pics figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pics figure img{
+    width: 500px;
+}
+
+.content{
+    grid-column: 1 / 2 ;
+    display: flex;
+   flex-direction: column;
+    overflow-y: auto;
+    height: 100%;
+    align-items: center;
+    top: 0%;
+    background-color: #656262;
+    
+}
+
+.content div{
+    padding-bottom: 50px;
+}
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+.data{
+    border-radius: 2%;
+    background-color:#f1eeee;
+    border: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+.calendar {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #f0f0f0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.days div {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+}
+
+.days div:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
 
 @media only screen and (max-width:765px){
     .header2 nav{
@@ -406,6 +519,25 @@ main{
     }
     body{
         width: 100%;
+    }
+    .discover{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr auto;
+        width: 100%;
+    }
+
+    .content{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        height: 100%;
+    }
+
+    .pics{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2; 
+    }
+    .pics figure img{
+        width: 300px;
     }
 
 
