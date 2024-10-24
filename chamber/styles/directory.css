@@ -329,6 +329,7 @@ main{
     top: 0%;
     background-color: #656262;
     
+    
 }
 
 
@@ -356,16 +357,20 @@ main{
 }
 
 .calendar {
-    width: 300px;
-    text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* You can define a specific width if needed */
+    height: auto; /* Allow content to dictate height */
+    min-height: 500px; /* Ensures a minimum height to prevent shifts */
     margin-bottom: 200px;
 }
 .data p{
     padding: 5%;
+}
+.data img{
+    width: 300px;
 }
 
 .month {
@@ -386,9 +391,9 @@ main{
     align-items: center;
     justify-content: space-evenly;
     color: white;
-    padding: 10px;
+    padding: 2px;
     font-weight: bold;
-    width: 120%;
+    width: 90%;
 
 }
 
@@ -560,6 +565,9 @@ button {
     }
     .pics figure img:hover{
         width: 300px;
+    }
+    .days-of-week{
+        width:80%;
     }
 
 
