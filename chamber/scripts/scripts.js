@@ -1,89 +1,7 @@
 console.log("JavaScript file loaded!");
 
-
- 
-
-const titleInput= document.getElementById('org-title');
-titleInput.addEventListener('input',()=>{
-    if(titleInput.value.match(/^[A-Za-z\s-]{7,}$/)){
-        console.log('valid title');
-    } else{
-        console.log('Follow the format');
-    }
-});
-
-
-// Function to display the current year and last modified date
-function displayFooterInfo() {
-    const yearElement = document.getElementById('year');
-    const lastModifiedElement = document.getElementById('last-modified');
-    
-    yearElement.textContent = new Date().getFullYear();
-    lastModifiedElement.textContent = document.lastModified;
-}
-
-// Run on page load
-displayFooterInfo();
-
-// Toggle menu visibility
-const hamburger = document.querySelector('.hamburger');
-const closeIcon = document.querySelector('.close-icon');
-const menu = document.querySelector('.menu');
-
-hamburger.addEventListener('click', () => {
-    menu.classList.toggle('show');
-    hamburger.classList.toggle('active');
-    closeIcon.classList.toggle('active');
-});
-
-closeIcon.addEventListener('click', () => {
-    menu.classList.remove('show');
-    hamburger.classList.remove('active');
-    closeIcon.classList.remove('active');
-});
-
-
-
-// Fetch members and display spotlight
-async function fetchMembers() {
-    try {
-        const response = await fetch('data/members.json'); // Adjust file path as necessary
-        const members = await response.json();
-        const goldSilverMembers = members.filter(member => member['membership_level'] === 'Gold' || member['membership_level'] === 'Silver');
-        const spotlightMembers = getRandomMembers(goldSilverMembers, 3);
-        displaySpotlightMembers(spotlightMembers);
-    } catch (error) {
-        console.error('Error fetching member data:', error);
-    }
-}
-
-function getRandomMembers(members, count) {
-    const shuffled = members.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, count);
-}
-
-function displaySpotlightMembers(members) {
-    const spotlightContainer = document.getElementById('spotlight-container');
-    members.forEach(member => {
-        const card = document.createElement('div');
-        card.classList.add('spotlight-card');
-        card.innerHTML = `
-            
-            <img src="${member.image_url}" alt="${member.company} Logo">
-            <div>
-            <h3>${member.company}</h3>
-            <p>Address:${member.address}</p>
-            <p>TEL: ${member.phone}</p>
-            <p>Membership: ${member.membership_level}</p>
-            <p>URL: <a href="${member.website}">${member.website}</a></p>
-            </div>
-        `;
-        spotlightContainer.appendChild(card);
-    });
-}
-
 fetchMembers();
-
+displayFooterInfo();
 // Fetch weather data and update the DOM
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
@@ -153,6 +71,109 @@ async function apifetch() {
 
 apifetch();
 
+
+
+
+// Fetch and display members
+async function fetchMembers() {
+    console.log("Fetching members...");
+    try {
+        const response = await fetch('data/members.json');  // Adjust path as necessary
+        const members = await response.json();
+        console.log(members); // Log the JSON data
+        displayMembers(members);
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+}
+
+// Function to display members in the container
+function displayMembers(members) {
+    const container = document.getElementById('members-container');
+    container.innerHTML = '';  // Clear any existing content
+
+    members.forEach(member => {
+        const card = document.createElement('div');
+        card.classList.add('member-card');
+        card.innerHTML = `
+        
+        <div>
+            <h2>${member.company}</h2>
+            <p>Address: ${member.address}</p>
+            <p>Phone: ${member['phone-number']}</p>
+            <p>Website: <a href="https://${member.website}" target="_blank">${member.website}</a></p>
+            <p>Employees: ${member.employees}</p>
+            <p>Membership Level: ${member['membership-level']}</p>
+            </div>
+            
+            <img src="${member.image_url}" alt="${member.company} logo">
+        
+        `;
+        container.appendChild(card);
+    });
+}
+
+// Toggle between grid and list views
+document.getElementById('toggle-grid').addEventListener('click', function() {
+    document.getElementById('members-container').className = 'grid-view';
+});
+
+document.getElementById('toggle-list').addEventListener('click', function() {
+    document.getElementById('members-container').className = 'list-view';
+});
+
+// Run on page load
+window.onload = function() {
+    fetchMembers();
+    displayFooterInfo();
+};
+ 
+
+const titleInput= document.getElementById('org-title');
+titleInput.addEventListener('input',()=>{
+    if(titleInput.value.match(/^[A-Za-z\s-]{7,}$/)){
+        console.log('valid title');
+    } else{
+        console.log('Follow the format');
+    }
+});
+
+
+// Function to display the current year and last modified date
+function displayFooterInfo() {
+    const yearElement = document.getElementById('year');
+    const lastModifiedElement = document.getElementById('last-modified');
+    
+    yearElement.textContent = new Date().getFullYear();
+    lastModifiedElement.textContent = document.lastModified;
+}
+
+
+
+// Run on page load
+
+
+// Toggle menu visibility
+const hamburger = document.querySelector('.hamburger');
+const closeIcon = document.querySelector('.close-icon');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('show');
+    hamburger.classList.toggle('active');
+    closeIcon.classList.toggle('active');
+});
+
+closeIcon.addEventListener('click', () => {
+    menu.classList.remove('show');
+    hamburger.classList.remove('active');
+    closeIcon.classList.remove('active');
+});
+
+
+
+
+
 const dialogBox = document.querySelector("#dialogbox");
 const dialogBoxText = document.querySelector("#dialogbox div");
 const closeButton = document.querySelector("#closebutton");
@@ -201,6 +222,7 @@ window.onload = function() {
             card.classList.add('visible');
         }, index * 200);  // Adjust the delay between each card animation (200ms in this case)
     });
+    
 };
 
 
