@@ -421,6 +421,12 @@ button {
     cursor: pointer;
 }
 
+h1{
+   
+   padding: 4% 45%;
+}
+
+
 @media only screen and (max-width:765px){
     .header2 nav{
         display:none;
