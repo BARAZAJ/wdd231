@@ -423,7 +423,7 @@ button {
 
 h1{
    
-   padding: 4% 45%;
+   padding: 4% 43%;
 }
 
 
@@ -574,6 +574,9 @@ h1{
     }
     .days-of-week{
         width:80%;
+    }
+    h1{
+        padding-left: 30%;
     }
 
 
