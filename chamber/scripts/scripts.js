@@ -1,5 +1,24 @@
 console.log("JavaScript file loaded!");
 
+const hamburger = document.querySelector('.hamburger');
+const closeIcon = document.querySelector('.close-icon');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('show');
+    hamburger.classList.toggle('active');
+    closeIcon.classList.toggle('active');
+});
+
+closeIcon.addEventListener('click', () => {
+    menu.classList.remove('show');
+    hamburger.classList.remove('active');
+    closeIcon.classList.remove('active');
+});
+
+
+
+
 fetchMembers();
 displayFooterInfo();
 // Fetch weather data and update the DOM
@@ -154,21 +173,7 @@ function displayFooterInfo() {
 
 
 // Toggle menu visibility
-const hamburger = document.querySelector('.hamburger');
-const closeIcon = document.querySelector('.close-icon');
-const menu = document.querySelector('.menu');
 
-hamburger.addEventListener('click', () => {
-    menu.classList.toggle('show');
-    hamburger.classList.toggle('active');
-    closeIcon.classList.toggle('active');
-});
-
-closeIcon.addEventListener('click', () => {
-    menu.classList.remove('show');
-    hamburger.classList.remove('active');
-    closeIcon.classList.remove('active');
-});
 
 
 
