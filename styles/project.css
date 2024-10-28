@@ -56,28 +56,61 @@ header.scrolled nav ul li a{
 td, tr{
     color: white;
 }
+.api-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
 #find-me{
     color:white;
-    padding: 10%;
+    padding: 3%;
     background-color: var(--primary-color);
-    border-radius: 100%;
+    border-radius: 60%;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 20px;
+    text-align: center;
+    
+    font-style: italic;
 }
 #find-me:hover{
     background-color: white;
     color: var(--primary-color);
 }
+/*
 .location{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     
-}
-#map-link{
+}*/
+map-link{
     text-decoration: none;
     color: white;
+}
+.volunteer{
+    text-decoration: none;
+    color:white;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-right:2%;
+    padding-left: 2%;
+    background-color: var(--primary-color);
+    border-radius: 60%;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    
+    font-style: italic;
+
+
+}
+.volunteer:hover{
+    background-color: white;
+    color: var(--primary-color);
 }
 
 #map-link{
@@ -86,7 +119,7 @@ td, tr{
     border-radius: 100%;
     text-align: center;
     font-size: 10px;
-    padding: 5%;
+    
 
 }
 
@@ -94,7 +127,7 @@ td, tr{
     background-color: white;
     color: var(--primary-color);
 }
-
+*/
 
 table{
     display: none;
@@ -218,6 +251,7 @@ main{
 }
 
 .main-pic{
+    
     width: 100%;
    grid-column: 1 / 2;
    grid-row: 1 / 2;
@@ -370,7 +404,7 @@ figure{
     animation: slideInFromRight 1s ease-out forwards;
 }
 */
-
+/*
 
 .api-section{
     display: flex;
@@ -385,9 +419,12 @@ figure{
 }
 
 .api-section a p{
-    padding: 10%;
+    padding: 30%;
     background-color: var(--primary-color);
-    border-radius: 80%;
+    border-radius: 100%;
+}
+
+    
    
     
 }
@@ -398,11 +435,12 @@ figure{
 }
 .api-section a{
   text-decoration: none;
-  margin-right: 8%;
+ 
 
 
 
-}
+
+}*/
 
 .info{
     display: flex;
@@ -634,7 +672,7 @@ background-color: var(--hover-color);
 .focus{
     flex-wrap: wrap;
 }
-.api-section a p{
+/*.api-section a p{
     padding: 10%;
     background-color: var(--primary-color);
     border-radius: 80%;
@@ -654,9 +692,15 @@ background-color: var(--hover-color);
 }
 #find-me{
     font-size: 10px;
-}
+}*/
 form{
     width: 80%;
+}
+.navigation a.active, .mobile-nav a.active {
+    font-weight: bold;
+    background-color: var(--hover-color);
+    color: white;
+
 }
 
 

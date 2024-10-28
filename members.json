@@ -1,56 +1,56 @@
 [{
     "name": "Amoile O. Tabitha",
     "address": "Chairperson - Board of Directors",
-    "image_url": "images/femaleplaceholder.jpg",
+    "image_url": "images/femaleplaceholder.webp",
     "description": "Tabitha has a background in social work with extensive experience in community leadership..."
 }
 ,{"name":"Muhumuza Evelyn",
 "address":"Vice-chairperson - Board of Directors",
-"image_url":"images/evelyn.jpg",
+"image_url":"images/evelyn.webp",
 "description": "Tabitha has a background in social work with extensive experience in community leadership..."
 
 
 },{"name":" Kakoma Samson",
 "address":"Board of Directors",
-"image_url":"images/kakoma.jpg",
+"image_url":"images/kakoma.webp",
 "description": "Tabitha has a background in social work with extensive experience in community leadership..."
 },
 {"name":"Amoit O. Lydia",
 "address":"Executive Director",
-"image_url":"images/Lydia.jpg",
+"image_url":"images/Lydia.webp",
 "description": "Tabitha has a background in social work with extensive experience in community leadership..."
 },
 {"name":" Faith Mirembe",
 "address":"Executive Secretary",
-"image_url":"images/Faith.jpg",
+"image_url":"images/Faith.webp",
 "description": "Tabitha has a background in social work with extensive experience in community leadership..."
 },
 {"name":"Kisembo Roberto",
 "address":"Human Resource Officer",
-"image_url":"images/roberto.jpg",
+"image_url":"images/roberto.webp",
 "description": "Tabitha has a background in social work with extensive experience in community leadership..."
 
 },
 {"name":"Anigo Agnes",
 "address":"Project Officer",
-"image_url":"images/anigo.jpg",
+"image_url":"images/anigo.webp",
 "description": "Tabitha has a background in social work with extensive experience in community leadership..."
 
 },
 {"name":"Baraza John",
 "address":"I.T specialist",
-"image_url":"images/brix.webp",
+"image_url":"images/brick8.webp",
 "description": "Tabitha has a background in social work with extensive experience in community leadership..."
 
 },
 {"name":"Ambayo Ronnie",
 "address":"I.T support specialist",
-"image_url":"images/Ambayo.jpg",
+"image_url":"images/Ambayo.webp",
 "description": "Tabitha has a background in social work with extensive experience in community leadership..."   
 },
 {"name":" Martha O. Judith ",
 "address":"Administrator",
-"image_url":"images/martha.jpg",
+"image_url":"images/martha.webp",
 "description": "Tabitha has a background in social work with extensive experience in community leadership..."
 }
 ]
