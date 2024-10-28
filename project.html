@@ -26,7 +26,7 @@
         <nav class="navigation">
             <ul>
                 <li><a href="project.html">Home</a></li>
-                <li><a href="donate.html">Donate</a></li>
+                <li><a href="donate.html">Volunteer</a></li>
                 <li ><a href="team.html">The team</a></li>
             </ul>
         </nav>
@@ -37,10 +37,10 @@
 
     </header>
     <nav class="mobile-nav">
-        <div class="close-icon"><img src="images/icons8-x-48.png" alt="icon image"> </div>
+        <div class="close-icon"><img src="images/icons8-x-48.png" alt="icon image" loading="lazy"> </div>
         <ul>
             <li class="nav-link"><a href="project.html">Home</a></li>
-            <li class="nav-link"><a href="donate.html">Donate</a></li> 
+            <li class="nav-link"><a href="donate.html">Volunteer</a></li> 
             <li class="nav-link"><a href="team.html">The team</a></li>
         </ul>
         
@@ -48,7 +48,19 @@
     <main>
         
         <div id="intro" class="intro">
-            <img src="images/anava1.jpg" alt="people standing" class="main-pic">  
+            <img 
+    class="main-pic"
+    srcset="
+        images/anava2.jpg 300w,
+        images/anava1.jpg 768w" 
+    sizes="(max-width: 760px) 300px, (min-width: 761px) 768px" 
+    src="images/anava1.jpg" 
+    alt="responsive image" 
+    loading="lazy">
+
+
+
+             
             <div class="motto">
                 <h1> Our vision</h1>
                 <p>We believe that every individual deserves a chance to thrive, regardless of their age, gender, or background.

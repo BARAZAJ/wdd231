@@ -1,9 +1,9 @@
-// Get all navigation links
-const navLinks = document.querySelectorAll(".nav-link");
+const currentLocation = location.href;
+const menuItems = document.querySelectorAll(".navigation a, .mobile-nav a");
 
-navLinks.forEach(link => {
-    if (link.href === window.location.href) {
-        link.classList.add("active");
+menuItems.forEach(item => {
+    if (item.href === currentLocation) {
+        item.classList.add("active");
     }
 });
 

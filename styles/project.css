@@ -163,11 +163,13 @@ table{
 
    
 }
-.nav-link.active {
-    color: white;
-    background-color: #007bff;
+.navigation a.active, .mobile-nav a.active {
     font-weight: bold;
+    background-color: var(--primary-color);
+
 }
+
+
 .navigation ul{
     display: flex;
     flex-direction: row;
@@ -529,7 +531,33 @@ form input{
 form button{
     margin-top: 13px;
 }
-
+.dialog-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dialog-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .close-btn {
+    float: right;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
 
 @media only screen and (max-width:765px){
 .main-pic{

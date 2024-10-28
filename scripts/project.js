@@ -1,9 +1,12 @@
-// Get all navigation links
-const navLinks = document.querySelectorAll(".nav-link");
 
-navLinks.forEach(link => {
-    if (link.href === window.location.href) {
-        link.classList.add("active");
+
+
+const currentLocation = location.href;
+const menuItems = document.querySelectorAll(".navigation a, .mobile-nav a");
+
+menuItems.forEach(item => {
+    if (item.href === currentLocation) {
+        item.classList.add("active");
     }
 });
 
@@ -62,15 +65,16 @@ function displayMembers(members) {
       card.classList.add('member-card');
       card.innerHTML = `
       <figure>
-          <img src="${member.image_url}" alt="${member.company} logo">
+          <img src="${member.image_url}" alt="${member.name}'s photo">
           <figcaption>${member.name}</figcaption>
           <figcaption>${member.address}</figcaption>
+          <button class="about-btn" data-name="${member.name}">About</button>
       </figure>
-      
       `;
       container.appendChild(card);
   });
 }
+
 window.onload = function() {
   fetchMembers();
   displayFooterInfo();
@@ -165,5 +169,52 @@ document.addEventListener("scroll", function() {
       <p><strong>Tel                   :</strong> ${show("mobile")}</p>
       <p><strong>Voluntary option      :</strong> ${show("membership-level")}</p>
   `;  
+
+  document.addEventListener("DOMContentLoaded", () => {
+    fetchMembers(); // Fetch and display team members
+  
+    const dialogBox = document.getElementById('member-dialog');
+    const dialogName = document.getElementById('dialog-name');
+    const dialogDescription = document.getElementById('dialog-description');
+    const closeBtn = document.querySelector('.close-btn');
+  
+    document.body.addEventListener('click', (event) => {
+        if (event.target.classList.contains('about-btn')) {
+            console.log("About button clicked");  // Check if the click is detected
+  
+            const memberName = event.target.getAttribute('data-name');
+            const member = getMemberDetails(memberName);
+  
+            if (member) {
+                dialogName.textContent = member.name;
+                dialogDescription.textContent = member.description;  // Ensure `description` exists in JSON
+                dialogBox.style.display = 'flex';
+            } else {
+                console.log("Member details not found");  // Debug if member is undefined
+            }
+        }
+    });
+  
+    // Close dialog when clicking the close button
+    closeBtn.addEventListener('click', () => {
+        dialogBox.style.display = 'none';
+    });
+  
+    // Close dialog when clicking outside content
+    dialogBox.addEventListener('click', (event) => {
+        if (event.target === dialogBox) {
+            dialogBox.style.display = 'none';
+        }
+    });
+  });
+  
+  function getMemberDetails(name) {
+    const members = [
+        {"name":"Amoile O. Tabitha", "description":"Chairperson and philanthropist with a background in sociology."},
+        // Add descriptions for each member here
+    ];
+    return members.find(member => member.name === name);
+  }
+  
   
   
