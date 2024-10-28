@@ -163,6 +163,11 @@ table{
 
    
 }
+.nav-link.active {
+    color: white;
+    background-color: #007bff;
+    font-weight: bold;
+}
 .navigation ul{
     display: flex;
     flex-direction: row;

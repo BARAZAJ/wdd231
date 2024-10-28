@@ -1,3 +1,31 @@
+// Get all navigation links
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach(link => {
+    if (link.href === window.location.href) {
+        link.classList.add("active");
+    }
+});
+
+
+// Check for 'firstVisit' key in localStorage
+if (!localStorage.getItem("firstVisit")) {
+  // If not found, set the current date and time as the first visit
+  const firstVisitTime = new Date().toLocaleString();  // format the date and time
+  localStorage.setItem("firstVisit", firstVisitTime);
+  console.log("First visit recorded:", firstVisitTime);
+} else {
+  // If 'firstVisit' exists, retrieve and display it
+  const firstVisitTime = localStorage.getItem("firstVisit");
+  console.log("You first visited this page on:", firstVisitTime);
+}
+
+// You can also display this information on the webpage if desired
+document.getElementById("first-visit").innerText = `You first submitted this application on: ${localStorage.getItem("firstVisit")}`;
+
+
+
+
 
 const currentUrl = window.location.href;
 const urlParams = new URLSearchParams(window.location.search);
