@@ -1,48 +1,44 @@
-[
-    {"name":"Ambayo Ronnie",
-    "address":"I.T support specialist",
-    "image_url":"images/Ambayo.jpg"
-   
-},{"name":"Baraza John",
-"address":"I.T specialist",
-"image_url":"images/brix.webp"
-
-},{"name":"Anigo Agnes",
-"address":"Project Officer",
-"image_url":"images/anigo.jpg"
-
-},{"name":"Amoit O. Lydia",
-"address":"Executive Director",
-"image_url":"images/Lydia.jpg"
-
-},{"name":"Muhumuza Evelyn",
-"address":"Vice-chairperson - Board of Directors",
-"image_url":"images/femaleplaceholder.jpg"
-
-},{"name":"Amoile O. Tabitha",
+[{"name":"Amoile O. Tabitha",
 "address":"Chairperson - Board of Directors",
 "image_url":"images/femaleplaceholder.jpg"
 
-},{"name":"Kisembo Roberto",
-"address":"Human Resource Officer",
-"image_url":"images/roberto.jpg"
+},{"name":"Muhumuza Evelyn",
+"address":"Vice-chairperson - Board of Directors",
+"image_url":"images/evelyn.jpg"
 
-},{"name":"Ambayo Ronnie",
-"address":"I.T support specialist",
-"image_url":"images/hotel.jpg"
-
+},{"name":" Kakoma Samson",
+"address":"Board of Directors",
+"image_url":"images/kakoma.jpg"
 },
-{"name":" Martha O. Judith ",
-"address":"Administrator",
-"image_url":"images/martha.jpg"
+{"name":"Amoit O. Lydia",
+"address":"Executive Director",
+"image_url":"images/Lydia.jpg"
 },
 {"name":" Faith Mirembe",
 "address":"Executive Secretary",
 "image_url":"images/Faith.jpg"
 },
-{"name":" Kakoma Samson",
-"address":"Board of Directors",
-"image_url":"images/maleplaceholder.jpg"
-}
+{"name":"Kisembo Roberto",
+"address":"Human Resource Officer",
+"image_url":"images/roberto.jpg"
 
+},
+{"name":"Anigo Agnes",
+"address":"Project Officer",
+"image_url":"images/anigo.jpg"
+
+},
+{"name":"Baraza John",
+"address":"I.T specialist",
+"image_url":"images/brix.webp"
+
+},
+{"name":"Ambayo Ronnie",
+"address":"I.T support specialist",
+"image_url":"images/Ambayo.jpg"   
+},
+{"name":" Martha O. Judith ",
+"address":"Administrator",
+"image_url":"images/martha.jpg"
+}
 ]

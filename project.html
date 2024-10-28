@@ -6,6 +6,11 @@
     <title>Project plan for my website project</title>
     <meta name="description" content="The official website for anavah foundation showing details about the organization and its founders.">
     <meta name="author"  content="Baraza John">
+    <meta property="og:title" content="A directory of the major businesses in Jinja">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://barazaj.github.io/wdd231/chamber/images/business.png">
+    <meta property="og:url" content="https://barazaj.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/anavah-favi.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles/project.css">
@@ -20,10 +25,10 @@
         </div>
         <nav class="navigation">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#intro">Home</a></li>
                 <li><a href="#">Events</a></li>
-                <li><a href="#">Our story</a></li>
-                <li><a href="#">The team</a></li>
+                <li><a href="#story">Our story</a></li>
+                <li><a href="#team">The team</a></li>
             </ul>
         </nav>
 
@@ -35,17 +40,17 @@
     <nav class="mobile-nav">
         <div class="close-icon"><img src="images/icons8-x-48.png" alt="icon image"> </div>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#intro">Home</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Donate</a></li>
-            <li><a href="#">Our story</a></li>
-            <li><a href="#">The team</a></li>
+            <li><a href="#story">Our story</a></li>
+            <li><a href="#team">The team</a></li>
         </ul>
         
     </nav>
     <main>
         
-        <div class="intro">
+        <div id="intro" class="intro">
             <img src="images/anava1.jpg" alt="people standing" class="main-pic">  
             <div class="motto">
                 <h1> Our vision</h1>
@@ -110,7 +115,7 @@
             </div>
             
         </div>
-        <div class="info">
+        <div class="info" id="story">
             <div class="text">
                 <h1>Our story</h1>
                 <p>Growing up, I was deeply moved by the struggles and injustices faced by marginalized communities. I saw how lack of access to education, healthcare, and economic opportunities trapped individuals in cycles of poverty and despair. I knew I had to do something to make a difference.
@@ -236,7 +241,20 @@ Access to social security and pension benefits
             </div>
 
         </div>
-
+    <div id="team">
+        <h1>Meet the team</h1>
+        <div id="members-container" class="grid-view"></div>
+        <div class="ceo">
+            <h2> About our Executive Director and Founder</h2>
+            <p>Amoit Osikol Lydia is a name that resonates with compassion, resilience, and a deep commitment to making a difference in the lives of others. As the Executive Director of Anavah Foundation, Lydia has dedicated her life to supporting the less advantaged, driven by her personal experiences and a genuine desire to extend a helping hand to those in need.
+                Lydia’s journey has been marked by unimaginable challenges, having been orphaned at a tender age and raised in abject poverty. However, through the kindness of her uncle and individuals in her community, she learned the transformative power of generosity and compassion. These experiences have shaped her into the compassionate and empathetic leader she is today.
+                With a Bachelor’s Degree in Development Studies, a Certificate in Monitoring and Evaluation, and currently pursuing a Master’s Degree in the same field, Lydia has equipped herself with the knowledge and skills necessary to drive positive change. Her certifications in Good Clinical Practice, Safeguarding, Sexual Reproductive Health and Rights, and Counselling further demonstrate her commitment to holistic development and well-being.
+                As the head of Anavah Foundation, Lydia leverages her academic background, certifications, and personal experiences to lead the organization with passion and dedication. Her expertise in development studies, research, child development, monitoring and evaluation, and social welfare areas enables her to make informed decisions and implement impactful programs that benefit vulnerable populations.
+                Lydia’s vision for Anavah Foundation is one of inclusivity, empowerment, and sustainability. She envisions a world where everyone has access to opportunities, resources, and support, breaking cycles of poverty and creating a brighter future for generations to come. Through her work, Lydia aims to create a ripple effect of compassion and empathy, inspiring others to join her in making a difference in the world.
+                In conclusion, Amoit Osikol Lydia is a shining example of how personal experiences can drive meaningful change in the world. Her dedication to supporting the less advantaged, coupled with her academic background and certifications, make her a persuasive advocate for social welfare and development. As we look to the future, let us be inspired by Lydia’s story and work together to create a more compassionate and inclusive world for all.
+                </p>
+        </div>
+    </div>
     </main>
     <footer>
         <div>
