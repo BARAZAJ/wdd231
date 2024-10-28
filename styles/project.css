@@ -56,7 +56,44 @@ header.scrolled nav ul li a{
 td, tr{
     color: white;
 }
+#find-me{
+    color:white;
+    padding: 10%;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    text-decoration: none;
+    font-size: 10px;
+}
+#find-me:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+.location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+#map-link{
+    text-decoration: none;
+    color: white;
+}
 
+#map-link{
+    color:white;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    text-align: center;
+    font-size: 10px;
+    padding: 5%;
+
+}
+
+#map-link:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
 
 
 table{
@@ -332,11 +369,12 @@ figure{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     margin-left:5%;
     padding-right: 10%;
     padding-left: 10%;
+    flex-wrap: wrap;
 }
 
 .api-section a p{
@@ -459,7 +497,33 @@ figure{
 .ceo p, h2{
     text-align: center;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    background-color:rgba(94, 239, 217, 0.324) ;
+    padding: 5%;
+    padding-top: 2%;
+    border-radius: 15px;
+    margin: 10px;
+   ;
+    
+}
+form label{
+    padding-top: 10%;
+   
+}
 
+
+form input{
+    width:100%;
+    height: 30px;
+}
+
+form button{
+    margin-top: 13px;
+}
 
 
 @media only screen and (max-width:765px){
@@ -536,6 +600,30 @@ background-color: var(--hover-color);
 }
 .focus{
     flex-wrap: wrap;
+}
+.api-section a p{
+    padding: 10%;
+    background-color: var(--primary-color);
+    border-radius: 80%;
+    font-size: 10px;
+   
+    
+}
+
+.api-section a p:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+.api-section a{
+  text-decoration: none;
+  
+  font-size: 10px;
+}
+#find-me{
+    font-size: 10px;
+}
+form{
+    width: 80%;
 }
 
 

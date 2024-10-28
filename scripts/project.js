@@ -1,4 +1,36 @@
 
+
+
+function geoFindMe() {
+  const status = document.querySelector("#status");
+  const mapLink = document.querySelector("#map-link");
+
+  mapLink.href = "";
+  mapLink.textContent = "";
+
+  function success(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    status.textContent = "";
+    mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+    mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+  }
+
+  function error() {
+    status.textContent = "Unable to retrieve your location";
+  }
+
+  if (!navigator.geolocation) {
+    status.textContent = "Geolocation is not supported by your browser";
+  } else {
+    status.textContent = "Locating…";
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+}
+
+
+document.querySelector("#find-me").addEventListener("click", geoFindMe);
 // Fetch and display members
 async function fetchMembers() {
   console.log("Fetching members...");
@@ -34,6 +66,8 @@ function displayMembers(members) {
 window.onload = function() {
   fetchMembers();
   displayFooterInfo();
+  geoFindMe();
+
 }; 
   
 
@@ -98,71 +132,30 @@ document.addEventListener("scroll", function() {
 
   fetchMembers();
   displayFooterInfo();
-  // Fetch weather data and update the DOM
-  const currentTemp = document.querySelector('#current-temp');
-  const weatherIcon = document.querySelector('#weather-icon');
-  const captionDesc = document.querySelector('#caption-desc');
-  const highTemp = document.querySelector('#max');
-  const lowTemp = document.querySelector('#min');
-  const Humidity =document.querySelector('#humidity');
-  const sunRise = document.querySelector('#rise')
-  const sunSet = document.querySelector('#set')
-  const today= document.querySelector('#today');
-  const tuesday =document.querySelector('#tuesday');
-  const wednesday = document.querySelector('#wednesday');
-  const todayTemp = document.querySelector('#today')
-  const tuesdayTemp = document.querySelector('#tuesday')
-  const wednesdayTemp = document.querySelector('#wednesday')
   
+  const currentUrl = window.location.href;
+  const urlParams = new URLSearchParams(window.location.search);
   
-  // Replace the API key and make sure lat/lon are correct for Jinja
-  const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=0.44186&lon=33.18033&appid=0d30100fd45e2d175df6babe27c43b43&units=metric'
-  async function apifetch() {
-      try {
-          const response = await fetch(url);
-          if (response.ok) {
-              const data = await response.json();
-              console.log(data);  // Check the fetched data structure in the console
-  
-              const icon = data.list[0].weather[0].icon;  // Extract the icon code
-              const description = data.list[0].weather[0].description;  // Extract the weather description
-  
-              const temp = data.list[0].main.temp;
-             // const icon = data.list[0].weather[0].icon;
-            //  const description = data.list[0].weather[0].description;
-              const max = data.list[0].main.temp_max;
-              const min = data.list[0].main.temp_min;
-              const humidity = data.list[0].main.humidity;
-              const sunrise = new Date(data.city.sunrise * 1000); // Convert Unix timestamp to JS Date object
-              const sunset = new Date(data.city.sunset * 1000);   // Convert Unix timestamp to JS Date object
-              const todaytemp = data.list[0].main.temp;
-              const tuesdaytemp = data.list[1].main.temp;
-              const wednesdaytemp = data.list[2].main.temp;
-              
-  
-              // Update the DOM elements with the fetched data
-              currentTemp.textContent = `${temp.toFixed(1)}°C`;  // Display temperature
-             // weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;  // Weather icon URL
-              captionDesc.textContent = description;  // Weather description
-              highTemp.textContent=`${max.toFixed(1)}°C`;
-              lowTemp.textContent=`${min.toFixed(1)}°C`;
-              sunSet.textContent=sunset;
-              sunRise.textContent=sunrise;
-              Humidity.textContent=humidity;
-              todayTemp.textContent=`${todaytemp.toFixed(1)}°C`;
-              tuesdayTemp.textContent=`${tuesdaytemp.toFixed(1)}°C`;
-              wednesdayTemp.textContent=`${wednesdaytemp.toFixed(1)}°C`;
-  
-              
-            
-  
-  
-          } else {
-              throw Error(await response.text());
-          }
-      } catch (error) {
-          console.log("Error fetching weather data:", error);
+  // Function to get the value for a given query parameter
+  function show(param) {
+      let result = urlParams.get(param);
+      if (result) {
+          // Replace URL-encoded characters, e.g., %40 for @ in emails
+          result = result.replace("%40", "@");
       }
+      return result || "N/A"; // Return 'N/A' if the parameter is not found
   }
   
-  apifetch();
+  // Get the element where we want to display the details
+  const appdetails = document.querySelector('#detail');
+  
+  // Set the inner HTML of the details element
+  appdetails.innerHTML = `
+      <p><strong>First name            :</strong> ${show("first-name")}</p>
+      <p><strong>Last name             :</strong> ${show("last-name")}</p>
+      <p><strong>Email                 :</strong> ${show("email")}</p>
+      <p><strong>Tel                   :</strong> ${show("mobile")}</p>
+      <p><strong>Voluntary option      :</strong> ${show("membership-level")}</p>
+  `;  
+  
+  
