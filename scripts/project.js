@@ -1,3 +1,63 @@
+const dialogBox = document.querySelector("#dialogbox");
+const dialogBoxText = document.querySelector("#dialogbox div");
+const closeButton = document.querySelector("#closebutton");
+const npButton = document.querySelector("#npbutton");
+const bronzeButton = document.querySelector("#bronzebutton");
+const silverButton = document.querySelector("#silverbutton");
+const goldButton = document.querySelector("#goldbutton");
+
+
+npButton.addEventListener("click",() =>{
+    dialogBox.showModal();
+    dialogBoxText.innerHTML=`<p>low costs. Only 20 dollars per month</p>`
+});
+
+bronzeButton.addEventListener("click",() =>{
+    dialogBox.showModal();
+    dialogBoxText.innerHTML=`<p>medium costs. Only 50 dollars per month</p>
+    <p>comes with additional privileges</p>`
+});
+
+silverButton.addEventListener("click",() =>{
+    dialogBox.showModal();
+    dialogBoxText.innerHTML=`<p>higher costs. Only 100 dollars per month</p>
+    <p> This is the best option if u are broke</p>
+    `
+});
+
+goldButton.addEventListener("click",() =>{
+    dialogBox.showModal();
+    dialogBoxText.innerHTML=`<p>Highest costs. Only 200 dollars per month</p>
+    <p>This is for the bosses</p>
+    <p> This comes with the highest privileges</p>
+    <p> You will be the coolest</p>
+    `
+});
+
+closeButton.addEventListener("click",() =>{
+    dialogBox.close();
+})
+
+window.onload = function() {
+    const cards = document.querySelectorAll('.membership-cards .card');
+    cards.forEach((card, index) => {
+        // Add 'visible' class to each card with a slight delay for staggered animation
+        setTimeout(() => {
+            card.classList.add('visible');
+        }, index * 200);  // Adjust the delay between each card animation (200ms in this case)
+    });
+    
+};
+
+
+
+
+
+
+
+
+
+
 
 const currentLocation = location.href;
 const menuItems = document.querySelectorAll(".navigation a, .mobile-nav a");
@@ -168,51 +228,51 @@ document.addEventListener("scroll", function() {
       <p><strong>Voluntary option      :</strong> ${show("membership-level")}</p>
   `;  
 
-  document.addEventListener("DOMContentLoaded", () => {
-    fetchMembers(); // Fetch and display team members
+  //document.addEventListener("DOMContentLoaded", () => {
+   // fetchMembers(); // Fetch and display team members
   
-    const dialogBox = document.getElementById('member-dialog');
-    const dialogName = document.getElementById('dialog-name');
-    const dialogDescription = document.getElementById('dialog-description');
-    const closeBtn = document.querySelector('.close-btn');
+ //   const dialogBox = document.getElementById('member-dialog');
+  //  const dialogName = document.getElementById('dialog-name');
+  //  const dialogDescription = document.getElementById('dialog-description');
+   // const closeBtn = document.querySelector('.close-btn');
   
-    document.body.addEventListener('click', (event) => {
-        if (event.target.classList.contains('about-btn')) {
-            console.log("About button clicked");  // Check if the click is detected
+   // document.body.addEventListener('click', (event) => {
+   //     if (event.target.classList.contains('about-btn')) {
+    //        console.log("About button clicked");  // Check if the click is detected
   
-            const memberName = event.target.getAttribute('data-name');
-            const member = getMemberDetails(memberName);
+      //      const memberName = event.target.getAttribute('data-name');
+      //      const member = getMemberDetails(memberName);
   
-            if (member) {
-                dialogName.textContent = member.name;
-                dialogDescription.textContent = member.description;  // Ensure `description` exists in JSON
-                dialogBox.style.display = 'flex';
-            } else {
-                console.log("Member details not found");  // Debug if member is undefined
-            }
-        }
-    });
+        //    if (member) {
+         //       dialogName.textContent = member.name;
+         //       dialogDescription.textContent = member.description;  // Ensure `description` exists in JSON
+          //      dialogBox.style.display = 'flex';
+          //  } else {
+           //     console.log("Member details not found");  // Debug if member is undefined
+           // }
+     //   }
+   // });
   
     // Close dialog when clicking the close button
-    closeBtn.addEventListener('click', () => {
-        dialogBox.style.display = 'none';
-    });
+   // closeBtn.addEventListener('click', () => {
+   //     dialogBox.style.display = 'none';
+   // });
   
     // Close dialog when clicking outside content
-    dialogBox.addEventListener('click', (event) => {
-        if (event.target === dialogBox) {
-            dialogBox.style.display = 'none';
-        }
-    });
-  });
+   // dialogBox.addEventListener('click', (event) => {
+    //    if (event.target === dialogBox) {
+      //      dialogBox.style.display = 'none';
+      //  }
+   // });
+ // });
   
-  function getMemberDetails(name) {
-    const members = [
-        {"name":"Amoile O. Tabitha", "description":"Chairperson and philanthropist with a background in sociology."},
+ // function getMemberDetails(name) {
+   // const members = [
+     //   {"name":"Amoile O. Tabitha", "description":"Chairperson and philanthropist with a background in sociology."},
         // Add descriptions for each member here
-    ];
-    return members.find(member => member.name === name);
-  }
+   // ];
+   // return members.find(member => member.name === name);
+ // }
   
   
   
