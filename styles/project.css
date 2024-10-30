@@ -609,13 +609,13 @@ nav a {
     text-align: center;
     position: relative;
     width: 30%;
-    height: auto;
+    height: auto%;
 }
 
 .member-card img {
-    width: 100%;
+    width: 300px;
 
-    height: auto;
+    height: 350px;
 }
 
 .dialog-content {
