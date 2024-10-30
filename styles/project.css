@@ -154,8 +154,8 @@ table{
    
 }
 .mobile-nav ul li{
-    margin: 5%;
-    padding:3% 10%;
+    margin-bottom: 5%;
+    
 }
 .mobile-nav ul li a:hover{
     background-color: white;
@@ -165,13 +165,13 @@ table{
 .mobile-nav ul li a {
     font-size: 100%;
     color: white;
-    font-weight: 0%;
     margin-bottom: 30%;
     text-decoration: none;
    /* padding: 5%;*/
     padding-right: 50%;
     padding-top: 5%;
     padding-bottom:5%;
+    text-align: center;
 
 }
 
@@ -578,12 +578,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header {
+/*header {
     background: #333;
     color: #fff;
     padding: 10px 20px;
 }
-
+*/
 nav a {
     color: #fff;
     margin: 0 10px;
@@ -591,10 +591,15 @@ nav a {
 }
 
 #members-container {
-    display: grid;
+   /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
-    padding: 20px;
+    padding: 20px;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .member-card {
@@ -603,10 +608,13 @@ nav a {
     padding: 10px;
     text-align: center;
     position: relative;
+    width: 30%;
+    height: auto;
 }
 
 .member-card img {
     width: 100%;
+
     height: auto;
 }
 
@@ -617,17 +625,27 @@ nav a {
 dialog {
     border: none;
     border-radius: 8px;
+   margin-left: 5%;
+   margin-right: 5%;
 }
 
 #closeButton {
     cursor: pointer;
     float: right;
 }
-
+#closeButton:hover{
+   background-color: var(--hover-color);
+   padding: 10px;
+   size: 5px;
+   color: white;
+}
 
 @media only screen and (max-width:765px){
 .main-pic{
     height: 100%;
+}
+.member-card{
+width: 60%;
 }
 
 .motto h1{

@@ -62,7 +62,7 @@
     {
         "name": "James Okello",
         "address": "Financial Analyst",
-        "image_url": "images/maleplaceholder.webp",
+        "image_url": "images/brick8.webp",
         "description": "James provides insights on the financial health of the foundation, analyzing data and advising on budgetary decisions. His expertise supports transparent financial management, allowing the foundation to allocate resources effectively for maximum community impact."
     },
     {
@@ -74,7 +74,7 @@
     {
         "name": "Mark Musoke",
         "address": "Volunteer Coordinator",
-        "image_url": "images/maleplaceholder.webp",
+        "image_url": "images/roberto.webp",
         "description": "Mark recruits, trains, and manages volunteers, ensuring they are well-prepared and motivated to contribute to the foundation's initiatives. He coordinates volunteer activities, providing valuable support to projects and enhancing the foundation's reach and effectiveness."
     },
     {
@@ -86,7 +86,7 @@
     {
         "name": "Joseph Byaruhanga",
         "address": "Program Evaluator",
-        "image_url": "images/maleplaceholder.webp",
+        "image_url": "images/Ambayo.webp",
         "description": "Joseph conducts evaluations on the effectiveness and outcomes of the foundation’s programs. He collects and analyzes data, preparing reports that inform future strategies and ensure that projects are meeting their goals and benefitting the target communities."
     }
 ]
