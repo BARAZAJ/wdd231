@@ -1,7 +1,7 @@
 async function fetchMembers() {
     console.log("Fetching members...");
     try {
-        const response = await fetch('members.json'); // Adjust the path if necessary
+        const response = await fetch('data/members.json'); // Adjust the path if necessary
         const members = await response.json();
         displayMembers(members);
     } catch (error) {
