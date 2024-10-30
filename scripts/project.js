@@ -1,6 +1,4 @@
 
-
-
 const currentLocation = location.href;
 const menuItems = document.querySelectorAll(".navigation a, .mobile-nav a");
 
@@ -65,7 +63,7 @@ function displayMembers(members) {
       card.classList.add('member-card');
       card.innerHTML = `
       <figure>
-          <img src="${member.image_url}" alt="${member.name}'s photo">
+          <img src="${member.image_url}" alt="${member.name}'s photo" loading="lazy">
           <figcaption>${member.name}</figcaption>
           <figcaption>${member.address}</figcaption>
           <button class="about-btn" data-name="${member.name}">About</button>
