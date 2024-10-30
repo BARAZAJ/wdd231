@@ -43,37 +43,8 @@ function geoFindMe() {
 
 document.querySelector("#find-me").addEventListener("click", geoFindMe);
 // Fetch and display members
-async function fetchMembers() {
-  console.log("Fetching members...");
-  try {
-      const response = await fetch('members.json');  // Adjust path as necessary
-      const members = await response.json();
-      console.log(members); // Log the JSON data
-      displayMembers(members);
-  } catch (error) {
-      console.error("Error fetching data:", error);
-  }
-}
 
-// Function to display members in the container
-function displayMembers(members) {
-  const container = document.getElementById('members-container');
-  container.innerHTML = '';  // Clear any existing content
 
-  members.forEach(member => {
-      const card = document.createElement('div');
-      card.classList.add('member-card');
-      card.innerHTML = `
-      <figure>
-          <img src="${member.image_url}" alt="${member.name}'s photo" loading="lazy">
-          <figcaption>${member.name}</figcaption>
-          <figcaption>${member.address}</figcaption>
-          <button class="about-btn" data-name="${member.name}">About</button>
-      </figure>
-      `;
-      container.appendChild(card);
-  });
-}
 
 window.onload = function() {
   fetchMembers();

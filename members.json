@@ -1,56 +1,92 @@
-[{
-    "name": "Amoile O. Tabitha",
-    "address": "Chairperson - Board of Directors",
-    "image_url": "images/femaleplaceholder.webp",
-    "description": "Tabitha has a background in social work with extensive experience in community leadership..."
-}
-,{"name":"Muhumuza Evelyn",
-"address":"Vice-chairperson - Board of Directors",
-"image_url":"images/evelyn.webp",
-"description": "Tabitha has a background in social work with extensive experience in community leadership..."
-
-
-},{"name":" Kakoma Samson",
-"address":"Board of Directors",
-"image_url":"images/kakoma.webp",
-"description": "Tabitha has a background in social work with extensive experience in community leadership..."
-},
-{"name":"Amoit O. Lydia",
-"address":"Executive Director",
-"image_url":"images/Lydia.webp",
-"description": "Tabitha has a background in social work with extensive experience in community leadership..."
-},
-{"name":" Faith Mirembe",
-"address":"Executive Secretary",
-"image_url":"images/Faith.webp",
-"description": "Tabitha has a background in social work with extensive experience in community leadership..."
-},
-{"name":"Kisembo Roberto",
-"address":"Human Resource Officer",
-"image_url":"images/roberto.webp",
-"description": "Tabitha has a background in social work with extensive experience in community leadership..."
-
-},
-{"name":"Anigo Agnes",
-"address":"Project Officer",
-"image_url":"images/anigo.webp",
-"description": "Tabitha has a background in social work with extensive experience in community leadership..."
-
-},
-{"name":"Baraza John",
-"address":"I.T specialist",
-"image_url":"images/brick8.webp",
-"description": "Tabitha has a background in social work with extensive experience in community leadership..."
-
-},
-{"name":"Ambayo Ronnie",
-"address":"I.T support specialist",
-"image_url":"images/Ambayo.webp",
-"description": "Tabitha has a background in social work with extensive experience in community leadership..."   
-},
-{"name":" Martha O. Judith ",
-"address":"Administrator",
-"image_url":"images/martha.webp",
-"description": "Tabitha has a background in social work with extensive experience in community leadership..."
-}
+[
+    {
+        "name": "Amoile O. Tabitha",
+        "address": "Chairperson - Board of Directors",
+        "image_url": "images/femaleplaceholder.webp",
+        "description": "Tabitha is a seasoned leader with a background in social work and over 15 years of experience in community advocacy and organizational development. As the Chairperson of the Board of Directors, she ensures that the organization’s vision aligns with impactful initiatives, while overseeing governance, strategic planning, and compliance with policies that empower vulnerable communities."
+    },
+    {
+        "name": "Muhumuza Evelyn",
+        "address": "Vice-chairperson - Board of Directors",
+        "image_url": "images/evelyn.webp",
+        "description": "Evelyn brings a wealth of experience in social development programs and grassroots initiatives. In her role as Vice-chairperson, she supports the Chairperson in leadership functions, coordinates board activities, and focuses on strengthening partnerships with community organizations and stakeholders to expand the foundation's outreach and influence."
+    },
+    {
+        "name": "Kakoma Samson",
+        "address": "Board of Directors",
+        "image_url": "images/kakoma.webp",
+        "description": "Samson serves on the Board of Directors, contributing his extensive knowledge in governance and sustainable community development. He focuses on policy formulation, risk management, and ensuring that strategic initiatives align with the foundation's long-term objectives of promoting self-reliance and economic empowerment in vulnerable communities."
+    },
+    {
+        "name": "Amoit O. Lydia",
+        "address": "Executive Director",
+        "image_url": "images/Lydia.webp",
+        "description": "As Executive Director, Lydia is responsible for overseeing the daily operations and managing the team to achieve organizational goals. She coordinates all projects, manages resources, and ensures that initiatives are implemented effectively. Lydia's leadership ensures that the foundation’s mission is consistently fulfilled across all levels."
+    },
+    {
+        "name": "Faith Mirembe",
+        "address": "Executive Secretary",
+        "image_url": "images/Faith.webp",
+        "description": "Faith handles administrative duties and supports both the board and executive team by organizing meetings, preparing reports, and managing records. She is instrumental in ensuring smooth communication between departments and stakeholders, allowing the foundation to operate efficiently and transparently."
+    },
+    {
+        "name": "Kisembo Roberto",
+        "address": "Human Resource Officer",
+        "image_url": "images/roberto.webp",
+        "description": "Roberto manages the human resources of the foundation, including recruitment, staff development, and employee welfare programs. He plays a critical role in maintaining a supportive work environment that encourages personal and professional growth for all team members, ultimately fostering a committed and motivated workforce."
+    },
+    {
+        "name": "Anigo Agnes",
+        "address": "Project Officer",
+        "image_url": "images/anigo.webp",
+        "description": "Agnes oversees project implementation, ensuring that timelines, budgets, and project goals are adhered to. With a strong background in project management, she works closely with field staff to monitor progress, assess community needs, and ensure that each project makes a meaningful impact on the target communities."
+    },
+    {
+        "name": "Baraza John",
+        "address": "I.T Specialist",
+        "image_url": "images/brick8.webp",
+        "description": "John is responsible for the foundation's technological infrastructure, including maintaining systems, managing databases, and ensuring cybersecurity. His role is vital for digital transformation and efficiency, enabling the team to use technology to better serve the community and streamline operations."
+    },
+    {
+        "name": "Ambayo Ronnie",
+        "address": "I.T Support Specialist",
+        "image_url": "images/Ambayo.webp",
+        "description": "Ronnie provides technical support across the foundation, addressing IT-related challenges and ensuring smooth operation of all digital platforms. His work includes troubleshooting, system updates, and supporting staff in technology use, which enhances productivity and supports the foundation’s mission."
+    },
+    {
+        "name": "Martha O. Judith",
+        "address": "Administrator",
+        "image_url": "images/martha.webp",
+        "description": "Martha handles administrative functions, managing office operations, schedules, and documentation. Her role is crucial in maintaining an organized, efficient environment where all teams can focus on achieving their goals and fulfilling the foundation’s mission."
+    },
+    {
+        "name": "James Okello",
+        "address": "Financial Analyst",
+        "image_url": "images/maleplaceholder.webp",
+        "description": "James provides insights on the financial health of the foundation, analyzing data and advising on budgetary decisions. His expertise supports transparent financial management, allowing the foundation to allocate resources effectively for maximum community impact."
+    },
+    {
+        "name": "Nabwire Stella",
+        "address": "Community Engagement Coordinator",
+        "image_url": "images/femaleplaceholder.webp",
+        "description": "Stella works directly with local communities, gathering insights and identifying pressing needs. She designs engagement programs to encourage participation, fostering strong partnerships with local leaders and ensuring that the foundation’s initiatives resonate with community members."
+    },
+    {
+        "name": "Mark Musoke",
+        "address": "Volunteer Coordinator",
+        "image_url": "images/maleplaceholder.webp",
+        "description": "Mark recruits, trains, and manages volunteers, ensuring they are well-prepared and motivated to contribute to the foundation's initiatives. He coordinates volunteer activities, providing valuable support to projects and enhancing the foundation's reach and effectiveness."
+    },
+    {
+        "name": "Aisha Kasule",
+        "address": "Communications Officer",
+        "image_url": "images/femaleplaceholder.webp",
+        "description": "Aisha handles public relations and communications, developing strategies to promote the foundation's work. She manages social media, prepares press releases, and builds connections with media outlets, helping to raise awareness and encourage support from the public."
+    },
+    {
+        "name": "Joseph Byaruhanga",
+        "address": "Program Evaluator",
+        "image_url": "images/maleplaceholder.webp",
+        "description": "Joseph conducts evaluations on the effectiveness and outcomes of the foundation’s programs. He collects and analyzes data, preparing reports that inform future strategies and ensure that projects are meeting their goals and benefitting the target communities."
+    }
 ]
