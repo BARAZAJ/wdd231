@@ -2,7 +2,7 @@
     {
         "name": "Amoile O. Tabitha",
         "address": "Chairperson - Board of Directors",
-        "image_url": "images/femaleplaceholder.webp",
+        "image_url": "images/lady3.webp",
         "description": "Tabitha is a seasoned leader with a background in social work and over 15 years of experience in community advocacy and organizational development. As the Chairperson of the Board of Directors, she ensures that the organization’s vision aligns with impactful initiatives, while overseeing governance, strategic planning, and compliance with policies that empower vulnerable communities."
     },
     {
@@ -62,31 +62,31 @@
     {
         "name": "James Okello",
         "address": "Financial Analyst",
-        "image_url": "images/brick8.webp",
+        "image_url": "images/man1.webp",
         "description": "James provides insights on the financial health of the foundation, analyzing data and advising on budgetary decisions. His expertise supports transparent financial management, allowing the foundation to allocate resources effectively for maximum community impact."
     },
     {
         "name": "Nabwire Stella",
         "address": "Community Engagement Coordinator",
-        "image_url": "images/femaleplaceholder.webp",
+        "image_url": "images/lady2.webp",
         "description": "Stella works directly with local communities, gathering insights and identifying pressing needs. She designs engagement programs to encourage participation, fostering strong partnerships with local leaders and ensuring that the foundation’s initiatives resonate with community members."
     },
     {
         "name": "Mark Musoke",
         "address": "Volunteer Coordinator",
-        "image_url": "images/roberto.webp",
+        "image_url": "images/man1.webp",
         "description": "Mark recruits, trains, and manages volunteers, ensuring they are well-prepared and motivated to contribute to the foundation's initiatives. He coordinates volunteer activities, providing valuable support to projects and enhancing the foundation's reach and effectiveness."
     },
     {
         "name": "Aisha Kasule",
         "address": "Communications Officer",
-        "image_url": "images/femaleplaceholder.webp",
+        "image_url": "images/lady1.webp",
         "description": "Aisha handles public relations and communications, developing strategies to promote the foundation's work. She manages social media, prepares press releases, and builds connections with media outlets, helping to raise awareness and encourage support from the public."
     },
     {
         "name": "Joseph Byaruhanga",
         "address": "Program Evaluator",
-        "image_url": "images/Ambayo.webp",
+        "image_url": "images/man2.webp",
         "description": "Joseph conducts evaluations on the effectiveness and outcomes of the foundation’s programs. He collects and analyzes data, preparing reports that inform future strategies and ensure that projects are meeting their goals and benefitting the target communities."
     }
 ]
