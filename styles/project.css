@@ -154,6 +154,8 @@ table{
 }
 .mobile-nav ul li{
     margin-bottom: 5%;
+    padding: 10px;
+    border-radius: 5%;
     
 }
 .mobile-nav ul li a:hover{
