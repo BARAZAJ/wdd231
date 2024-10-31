@@ -1,4 +1,14 @@
+// Select the header element
+const header = document.getElementById('header');
 
+document.addEventListener("scroll", function() {
+  const header = document.querySelector("header"); // Adjust if your header uses a different tag
+  if (window.scrollY > 10) { // Change 50 to the scroll amount you want
+      header.classList.add("scrolled");
+  } else {
+      header.classList.remove("scrolled");
+  }
+});
 
 
 const currentLocation = location.href;
@@ -64,17 +74,7 @@ window.onload = function() {
 
 
 
-// Select the header element
-const header = document.getElementById('header');
 
-document.addEventListener("scroll", function() {
-  const header = document.querySelector("header"); // Adjust if your header uses a different tag
-  if (window.scrollY > 10) { // Change 50 to the scroll amount you want
-      header.classList.add("scrolled");
-  } else {
-      header.classList.remove("scrolled");
-  }
-});
 
 
     const hamburger = document.querySelector('.hamburger'); 
