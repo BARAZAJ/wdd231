@@ -119,8 +119,7 @@ map-link{
     border-radius: 100%;
     text-align: center;
     font-size: 10px;
-    
-
+    text-decoration: none;
 }
 
 #map-link:hover{
@@ -380,6 +379,14 @@ figure{
     align-items: center;
     justify-content: center;
 }
+.api-section{
+    display: flex;
+    justify-content: center;
+}
+.status{
+    display: none;
+}
+
 
 /*   
 
