@@ -379,10 +379,7 @@ figure{
     align-items: center;
     justify-content: center;
 }
-.api-section{
-    display: flex;
-    justify-content: center;
-}
+
 .status{
     display: none;
 }
