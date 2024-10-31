@@ -212,6 +212,7 @@ table{
 .navigation ul li{
     list-style-type: none;
     margin-left: 30px;
+  
     
    
 }
@@ -225,6 +226,8 @@ table{
     font-weight: bold;
     font-size: 150%;
     color: #F3F3EA;
+    padding: 10px;
+    border-radius: 5%;
 }
 main{
     display: flex;
